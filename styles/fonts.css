@@ -1,0 +1,25 @@
+.font-gotham {
+  font-family: 'Gotham';
+}
+.font-bold {
+  font-family: 'Basis Grotesque Bold';
+  font-weight: 500;
+}
+.font-46 {
+  font-size: 2.875rem;
+}
+.font-24 {
+  font-size: 1.5rem;
+}
+.font-14 {
+  font-size: 0.875rem;
+}
+.color-white {
+  color: #ffffff;
+}
+.color-black {
+  color: #4C5563;
+}
+.line-height-17 {
+  line-height: 1.063rem;
+}

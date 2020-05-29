@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.ju-con-between {
+  justify-content: space-between;
+}
