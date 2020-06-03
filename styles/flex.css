@@ -7,6 +7,9 @@
 .ju-co-between {
   justify-content: space-between;
 }
+.ju-co-center {
+  justify-content: center;
+}
 .al-it-center {
   align-items: center;
 }

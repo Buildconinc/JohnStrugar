@@ -20,6 +20,13 @@
   width: 4.688rem;
   cursor: pointer;
 }
+.home-about-image {
+  height: 100vh;
+  background-image: url(../assets/images/home_about.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .line-white {
   width: 6.125rem;
   height: 1px;

@@ -12,6 +12,9 @@
 .font-46 {
   font-size: 2.875rem;
 }
+.font-36 {
+  font-size: 2.25rem;
+}
 .font-32 {
   font-size: 2rem;
 }
@@ -41,6 +44,15 @@
 }
 .line-height-38 {
   line-height: 2.375rem;
+}
+.line-height-42 {
+  line-height: 2.625rem;
+}
+.line-height-54 {
+  line-height: 3.375rem;
+}
+.text-align-center {
+  text-align: center;
 }
 .background-color-white {
   background-color: #ffffff;
