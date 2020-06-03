@@ -1,0 +1,32 @@
+.home-intro {
+  height: calc(100vh - 2.75rem);
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url('../assets/images/home_intro.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 99;
+  position: relative;
+}
+.home-intro-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 4.688rem;
+  width: 4.688rem;
+  cursor: pointer;
+}
+.line-white {
+  width: 6.125rem;
+  height: 1px;
+  background-color: #ffffff;
+}
+.line-black {
+  width: 6.125rem;
+  height: 1px;
+  background-color: #000000;
+}

@@ -46,6 +46,35 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
+        // line 3
+        echo "
+<!-- intro -->
+<div class=\"home-intro flex al-it-center\">
+\t<img class=\"home-intro-play\" src=\"./assets/images/icons/play.png\">
+\t<div class=\"flex flex-column\">
+\t\t<div class=\"font-16 color-white line-height-19 margin-left-202 margin-bottom-16\">Treatments</div>
+\t\t<div class=\"flex\">
+\t\t\t<div class=\"line-white margin-left-64 margin-top-19\"></div>
+\t\t\t<div class=\"font-32 color-white line-height-38 margin-bottom-38 width-416 margin-left-40\">Lorem Ipsum is simply dummy text</div>
+\t\t</div>
+\t\t<div class=\"font-14 color-white font-300 line-height-22 margin-left-202 margin-bottom-66 width-462\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+\t\t<div class=\"flex al-it-center\">
+\t\t\t<div class=\"line-white margin-left-64\"></div>
+\t\t\t<div class=\"font-16 font-bold color-white line-height-19 margin-left-40 margin-right-19\">Read more</div>
+\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t</div>
+\t</div>
+</div>
+
+<!-- treatments -->
+
+<!-- blog posts -->
+
+<!-- about -->
+
+<!-- text -->
+
+";
     }
 
     public function getTemplateName()
@@ -60,7 +89,7 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 
     public function getDebugInfo()
     {
-        return array (  46 => 2,  35 => 1,);
+        return array (  50 => 3,  46 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
