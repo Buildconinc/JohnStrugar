@@ -36,6 +36,18 @@
 .line-height-22 {
   line-height: 1.375rem;
 }
+.line-height-28 {
+  line-height: 1.75rem;
+}
 .line-height-38 {
   line-height: 2.375rem;
+}
+.background-color-white {
+  background-color: #ffffff;
+}
+.background-color-blue {
+  background-color: #003E7E;
+}
+.background-color-grey {
+  background-color: #F4F4F4;
 }

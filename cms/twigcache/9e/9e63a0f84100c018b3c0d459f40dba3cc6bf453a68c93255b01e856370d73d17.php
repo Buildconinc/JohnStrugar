@@ -69,6 +69,47 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 <!-- treatments -->
 
 <!-- blog posts -->
+<div class=\"background-color-grey flex flex-column\">
+\t<div class=\"flex al-it-center margin-bottom-81 margin-top-97\">
+\t\t<div class=\"line-black margin-left-64\"></div>
+\t\t<div class=\"font-32 color-black line-height-38 margin-left-40\">General Health Advice</div>
+\t</div>
+\t<div class=\"flex ju-co-between padding-left-202 padding-right-202 margin-bottom-97\">
+\t<!-- 1 -->
+\t\t<div class=\"flex flex-column\">
+\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
+\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
+\t\t\t<div class=\"width-20vw font-14 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing</div>
+\t\t\t<div class=\"flex al-it-center\">
+\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
+\t\t\t\t<div class=\"font-16 font-bold color-black line-height-19 margin-right-19\">Read more</div>
+\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t</div>
+\t\t</div>
+\t<!-- 2 -->
+\t\t<div class=\"flex flex-column\">
+\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
+\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
+\t\t\t<div class=\"width-20vw font-14 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing</div>
+\t\t\t<div class=\"flex al-it-center\">
+\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
+\t\t\t\t<div class=\"font-16 font-bold color-black line-height-19 margin-right-19\">Read more</div>
+\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t</div>
+\t\t</div>
+\t<!-- 3 -->
+\t\t<div class=\"flex flex-column\">
+\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
+\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
+\t\t\t<div class=\"width-20vw font-14 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing</div>
+\t\t\t<div class=\"flex al-it-center\">
+\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
+\t\t\t\t<div class=\"font-16 font-bold color-black line-height-19 margin-right-19\">Read more</div>
+\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t</div>
+\t\t</div>
+\t</div>
+</div>
 
 <!-- about -->
 
