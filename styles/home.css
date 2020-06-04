@@ -32,10 +32,20 @@
   height: 1px;
   background-color: #ffffff;
 }
+@media screen and (max-width: 1366px) {
+  .line-white {
+    width: 4.125rem;
+  }
+}
 .line-black {
   width: 6.125rem;
   height: 1px;
   background-color: #000000;
+}
+@media screen and (max-width: 1366px) {
+  .line-black {
+    width: 4.125rem;
+  }
 }
 .line-small-black {
   width: 3.375rem;
@@ -43,6 +53,6 @@
   background-color: #000000;
 }
 .image {
-  max-width: 22vw;
+  max-width: 24vw;
   max-height: 19.625rem;
 }

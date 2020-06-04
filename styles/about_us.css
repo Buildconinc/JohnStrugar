@@ -1,0 +1,36 @@
+.about-picture-1 {
+  height: 95vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url('../assets/images/about_1.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 99;
+  position: relative;
+}
+.about-picture-1-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 4.688rem;
+  width: 4.688rem;
+  cursor: pointer;
+}
+.about-picture-2 {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url('../assets/images/about_2.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-logo {
+  height: 40.625rem;
+  width: 100%;
+  background-color: #003E7E;
+}
