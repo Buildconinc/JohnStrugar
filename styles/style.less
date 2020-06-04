@@ -1,0 +1,118 @@
+// @import './variables.less';
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 300;
+  src: url('../assets/font/Gotham.ttf');
+}
+@font-face {
+  font-family: 'Basis Grotesque Regular';
+  font-weight: normal;
+  src: url('../assets/font/BasisGrotesquePro-Regular.ttf');
+}
+@font-face {
+  font-family: 'Basis Grotesque Light';
+  font-weight: 300;
+  src: url('../assets/font/BasisGrotesquePro-Light.ttf');
+}
+@font-face {
+  font-family: 'Basis Grotesque Bold';
+  font-weight: 500;
+  src: url('../assets/font/BasisGrotesquePro-Bold.ttf');
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  font-family: 'Basis Grotesque Regular';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	height: 2.75rem;
+	background-color: @gold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 9999999;
+	&-left {
+		margin-left: 3rem;
+		display: flex;
+		align-items: center;
+	}
+	&-right {
+		margin-right: 3rem;
+		display: flex;
+	}
+}
+.footer {
+	height: calc(~'100vh - 2.75rem');
+	width: 100%;
+	display: flex;
+	&-left {
+		width: 50%;
+		height: 100%;
+		background-color: @gold;
+		position: relative;
+		&-decoration-1 {
+			position: absolute;
+			top: -2.313rem;
+			left: -5.25rem;
+			transform: rotate(-21.23deg);
+		}
+		&-decoration-2 {
+			position: absolute;
+			top: -1.313rem;
+			right: -5.25rem;
+		}
+		&-block {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			box-sizing: border-box;
+			padding-left: 11.438rem;
+			padding-top: 8.375rem;
+			padding-bottom: 5.938rem;
+		}
+	}
+	&-right {
+		width: 50%;
+		height: 100%;
+	}
+}
+
+@import './variables.less';
+@import './spacing.less';
+@import './flex.less';
+@import './fonts.less';
+@import './home.less';
+
+@media screen and (max-width: 1440px) {
+	*{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 1336px) {
+	*{
+		font-size: 14.5px;
+	}
+}
+@media screen and (max-width: 1280px) {
+	*{
+		font-size: 14px;
+	}
+}
