@@ -54,8 +54,10 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
 <div class=\"header\">
 \t<div class=\"header-left\">
-\t\t<img class=\"margin-right-100\" src=\"./assets/images/full-logo.png\">
-\t\t<a class=\"font-14 color-white font-gotham margin-right-60\">About</a>
+\t\t<a href=\"#\">
+\t\t\t<img class=\"margin-right-100\" src=\"./assets/images/full-logo.png\">
+\t\t</a>
+\t\t<a href=\"about_us\" class=\"font-14 color-white font-gotham margin-right-60\">About</a>
 \t\t<a class=\"font-14 color-white font-gotham margin-right-60\">Treatments</a>
 \t\t<a class=\"font-14 color-white font-gotham\">Blog</a>
 \t</div>
@@ -69,9 +71,9 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 </div>
 
 ";
-        // line 30
+        // line 32
         $this->displayBlock('content', $context, $blocks);
-        // line 31
+        // line 33
         echo "
 <div class=\"footer\">
 \t<div class=\"footer-left\">
@@ -128,7 +130,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 ";
     }
 
-    // line 30
+    // line 32
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -146,7 +148,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
     public function getDebugInfo()
     {
-        return array (  132 => 30,  75 => 31,  73 => 30,  50 => 9,  43 => 4,  38 => 1,);
+        return array (  134 => 32,  77 => 33,  75 => 32,  50 => 9,  43 => 4,  38 => 1,);
     }
 
     public function getSourceContext()
