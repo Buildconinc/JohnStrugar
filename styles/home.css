@@ -1,5 +1,5 @@
 .home-intro {
-  height: 100vh;
+  height: calc(100vh - 2.75rem);
   width: 100%;
   box-sizing: border-box;
   background-image: url('../assets/images/home_intro.jpg');
@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 .home-about-image {
-  height: 100vh;
+  height: calc(100vh - 2.75rem);
   background-image: url(../assets/images/home_about.jpg);
   background-size: cover;
   background-position: center;
@@ -44,6 +44,16 @@
 }
 @media screen and (max-width: 1366px) {
   .line-black {
+    width: 4.125rem;
+  }
+}
+.line-transparent {
+  width: 6.125rem;
+  height: 1px;
+  background-color: transparent;
+}
+@media screen and (max-width: 1366px) {
+  .line-transparent {
     width: 4.125rem;
   }
 }

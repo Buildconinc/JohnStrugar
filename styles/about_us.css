@@ -1,5 +1,5 @@
 .about-picture-1 {
-  height: 95vh;
+  height: calc(95vh - 2.75rem);
   width: 100%;
   box-sizing: border-box;
   background-image: url('../assets/images/about_1.jpg');
@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 .about-picture-2 {
-  height: 100vh;
+  height: calc(100vh - 2.75rem);
   width: 100%;
   box-sizing: border-box;
   background-image: url('../assets/images/about_2.jpg');

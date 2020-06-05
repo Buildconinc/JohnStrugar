@@ -59,7 +59,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t\t</a>
 \t\t<a href=\"about_us\" class=\"font-14 color-white font-gotham margin-right-60\">About</a>
 \t\t<a class=\"font-14 color-white font-gotham margin-right-60\">Treatments</a>
-\t\t<a class=\"font-14 color-white font-gotham\">Blog</a>
+\t\t<a href=\"blog\" class=\"font-14 color-white font-gotham\">Blog</a>
 \t</div>
 \t<div class=\"header-right\">
 \t\t<p class=\"font-14 color-white font-gotham margin-right-16\">Address</p>
@@ -69,21 +69,18 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t\t<a class=\"font-14 color-white font-gotham\">Contact</a>
 \t</div>
 </div>
+<div style=\"height: 2.75rem; width: 100%;\"></div>
 
 ";
-        // line 32
-        $this->displayBlock('content', $context, $blocks);
         // line 33
+        $this->displayBlock('content', $context, $blocks);
+        // line 34
         echo "
 <div class=\"footer\">
 \t<div class=\"footer-left\">
-\t\t<div class=\"footer-left-decoration-1\">
-\t\t\t<img src=\"./assets/images/decoration1.png\">
-\t\t</div>
-\t\t<div class=\"footer-left-decoration-2\">
-\t\t\t<img src=\"./assets/images/decoration2.png\">
-\t\t</div>
-\t\t<div class=\"footer-left-block\">
+\t\t";
+        // line 43
+        echo "\t\t<div class=\"footer-left-block\">
 \t\t\t<div class=\"flex flex-column\">
 \t\t\t\t<div class=\"font-46 color-white font-bold margin-bottom-35\">CONTACT</div>
 \t\t\t\t<div class=\"font-24 color-white\">Lorem Ipsum is simply dummy </br> text of the printing</div>
@@ -130,7 +127,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 ";
     }
 
-    // line 32
+    // line 33
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -148,7 +145,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
     public function getDebugInfo()
     {
-        return array (  134 => 32,  77 => 33,  75 => 32,  50 => 9,  43 => 4,  38 => 1,);
+        return array (  131 => 33,  83 => 43,  78 => 34,  76 => 33,  50 => 9,  43 => 4,  38 => 1,);
     }
 
     public function getSourceContext()

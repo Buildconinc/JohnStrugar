@@ -1,6 +1,6 @@
 .home {
 	&-intro {
-		height: 100vh;
+		height: calc(~'100vh - 2.75rem');
 		width: 100%;
 		box-sizing: border-box;
 		background-image: url('../assets/images/home_intro.jpg');
@@ -23,7 +23,7 @@
 	}
 	&-about {
 		&-image {
-			height: 100vh;
+			height: calc(~'100vh - 2.75rem');
 			background-image: url(../assets/images/home_about.jpg);
 			background-size: cover;
 			background-position: center;
@@ -45,6 +45,14 @@
 		width: 6.125rem;
 		height: 1px;
 		background-color: #000000;
+		@media screen and (max-width: 1366px){
+			width: 4.125rem;
+		}
+	}
+	&-transparent {
+		width: 6.125rem;
+		height: 1px;
+		background-color: transparent;
 		@media screen and (max-width: 1366px){
 			width: 4.125rem;
 		}
