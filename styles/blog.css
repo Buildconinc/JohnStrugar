@@ -1,0 +1,13 @@
+.blog-intro {
+  height: 80vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+.blog-intro-image {
+  height: 100%;
+  width: 50%;
+  background-image: url(../assets/images/blog_intro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
