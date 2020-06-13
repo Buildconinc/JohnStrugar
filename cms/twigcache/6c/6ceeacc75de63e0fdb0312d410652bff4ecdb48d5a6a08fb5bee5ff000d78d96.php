@@ -77,7 +77,7 @@ class __TwigTemplate_756e408ceb652f037ad6ec5f0c33540c5a49e6e4ec78e1c90431569a62f
 \t\t\t\t<div class=\"flex flex-column margin-bottom-81\">
 \t\t\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
 \t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
-\t\t\t\t\t<div class=\"width-20vw font-14 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'...</div>
+\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'...</div>
 \t\t\t\t\t<div class=\"flex al-it-center\">
 \t\t\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
 \t\t\t\t\t\t<div class=\"font-16 color-black line-height-19 margin-right-19\">Read more</div>
@@ -88,7 +88,7 @@ class __TwigTemplate_756e408ceb652f037ad6ec5f0c33540c5a49e6e4ec78e1c90431569a62f
 \t\t\t\t<div class=\"flex flex-column margin-bottom-81\">
 \t\t\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
 \t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
-\t\t\t\t\t<div class=\"width-20vw font-14 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'...</div>
+\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'...</div>
 \t\t\t\t\t<div class=\"flex al-it-center\">
 \t\t\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
 \t\t\t\t\t\t<div class=\"font-16 color-black line-height-19 margin-right-19\">Read more</div>
@@ -99,7 +99,7 @@ class __TwigTemplate_756e408ceb652f037ad6ec5f0c33540c5a49e6e4ec78e1c90431569a62f
 \t\t\t\t<div class=\"flex flex-column margin-bottom-81\">
 \t\t\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
 \t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
-\t\t\t\t\t<div class=\"width-20vw font-14 font-300 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'...</div>
+\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 font-300 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'...</div>
 \t\t\t\t\t<div class=\"flex al-it-center\">
 \t\t\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
 \t\t\t\t\t\t<div class=\"font-16  color-black line-height-19 margin-right-19\">Read more</div>
@@ -110,7 +110,7 @@ class __TwigTemplate_756e408ceb652f037ad6ec5f0c33540c5a49e6e4ec78e1c90431569a62f
 \t\t\t\t<div class=\"flex flex-column margin-bottom-81\">
 \t\t\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
 \t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
-\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 font-300 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' Lorem Ipsum has been the industry'</div>
+\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 font-300 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'...</div>
 \t\t\t\t\t<div class=\"flex al-it-center\">
 \t\t\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
 \t\t\t\t\t\t<div class=\"font-16  color-black line-height-19 margin-right-19\">Read more</div>

@@ -27,3 +27,6 @@
 .al-it-center {
   align-items: center;
 }
+.al-it-end {
+  align-items: flex-end;
+}

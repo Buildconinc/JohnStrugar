@@ -55,6 +55,16 @@ a {
 	}
 }
 
+button {
+	&:hover {
+		background-color: transparent !important;
+		opacity: 0.8;
+	}
+	&:focus {
+		outline: none !important;
+	}
+}
+
 .header {
 	position: fixed;
 	width: 100%;
@@ -111,6 +121,29 @@ a {
 	}
 }
 
+.owl-nav {
+	position: absolute !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 25rem;
+}
+.owl-dots {
+	margin-top: 10px !important;
+	position: absolute !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 18.75rem;
+	height: 3.428rem;
+}
+
 @import './variables.less';
 @import './spacing.less';
 @import './flex.less';
@@ -118,6 +151,7 @@ a {
 @import './home.less';
 @import './about_us.less';
 @import './blog.less';
+@import './treatments.less';
 
 @media screen and (max-width: 1440px) {
 	*{

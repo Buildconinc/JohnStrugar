@@ -48,6 +48,8 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
   ";
         // line 9
         echo "  <link rel=\"stylesheet\" type=\"text/css\" href=\"cms/sharedstyle.css\">
+\t<link rel=\"stylesheet\" href=\"owl/assets/owl.carousel.min.css\"/>
+  <link rel=\"stylesheet\" href=\"owl/assets/owl.theme.default.css\"/>  
 \t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles/style.css\">
 </head>
 <body >
@@ -58,7 +60,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t\t\t<img class=\"margin-right-100\" src=\"./assets/images/full-logo.png\">
 \t\t</a>
 \t\t<a href=\"about_us\" class=\"font-14 color-white font-gotham margin-right-60\">About</a>
-\t\t<a class=\"font-14 color-white font-gotham margin-right-60\">Treatments</a>
+\t\t<a href=\"treatments\" class=\"font-14 color-white font-gotham margin-right-60\">Treatments</a>
 \t\t<a href=\"blog\" class=\"font-14 color-white font-gotham\">Blog</a>
 \t</div>
 \t<div class=\"header-right\">
@@ -72,14 +74,14 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 <div style=\"height: 2.75rem; width: 100%;\"></div>
 
 ";
-        // line 33
+        // line 35
         $this->displayBlock('content', $context, $blocks);
-        // line 34
+        // line 36
         echo "
 <div class=\"footer\">
 \t<div class=\"footer-left\">
 \t\t";
-        // line 43
+        // line 45
         echo "\t\t<div class=\"footer-left-block\">
 \t\t\t<div class=\"flex flex-column\">
 \t\t\t\t<div class=\"font-46 color-white font-bold margin-bottom-35\">CONTACT</div>
@@ -120,14 +122,61 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t</div>
 </div>
 
+<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
+<script src=\"owl/owl.carousel.min.js\"></script>
 
+<script>
+var owl1 = \$('#owl1');
+
+owl1.owlCarousel({
+    items:1,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3500,
+    autoplayHoverPause:true,
+    nav:true,
+\t\tnavText: [\"<img src='assets/images/icons/arrowLeft.png'>\",\"<img src='assets/images/icons/arrowRight.png''>\"],
+    dots:true,
+    animateOut: 'fadeOut',
+});
+// var owl3 = \$('#owl3');
+// owl3.owlCarousel({
+//     loop:true,
+//     autoplay:false,
+//     autoplayTimeout:3500,
+// \t\tautoplayHoverPause:false,
+// \t\tnav: true,
+// \t\tnavText: [\"<img src='assets/images/icons/arrowRight.png'>\",\"<img src='assets/images/icons/arrowRight.png''>\"],
+//     dots:true,
+// \t\tanimateOut: 'fadeOut',
+\t\t// responsiveClass:true,
+    // responsive:{
+    //     0:{
+\t\t// \t\t\t\titems:1,
+\t\t// \t\t\t\tnav: true
+    //     },
+    //     960:{
+    //         items:2,
+    //         nav:true
+    //     },
+    //     1440:{
+    //         items:3,
+    //         nav:true
+\t\t// \t\t},
+\t\t// \t\t1680:{
+\t\t// \t\t\titems:3,
+\t\t// \t\t\tnav:true
+\t\t// \t},
+    // }
+// });
+</script>
 
 </body>
 </html>
 ";
     }
 
-    // line 33
+    // line 35
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -145,7 +194,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
     public function getDebugInfo()
     {
-        return array (  131 => 33,  83 => 43,  78 => 34,  76 => 33,  50 => 9,  43 => 4,  38 => 1,);
+        return array (  180 => 35,  85 => 45,  80 => 36,  78 => 35,  50 => 9,  43 => 4,  38 => 1,);
     }
 
     public function getSourceContext()

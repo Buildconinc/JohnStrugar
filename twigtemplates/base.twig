@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {# <meta name="description" content="{% block description %}{% endblock %}"/> #}
   <link rel="stylesheet" type="text/css" href="cms/sharedstyle.css">
+	<link rel="stylesheet" href="owl/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="owl/assets/owl.theme.default.css"/>  
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body >
@@ -17,7 +19,7 @@
 			<img class="margin-right-100" src="./assets/images/full-logo.png">
 		</a>
 		<a href="about_us" class="font-14 color-white font-gotham margin-right-60">About</a>
-		<a class="font-14 color-white font-gotham margin-right-60">Treatments</a>
+		<a href="treatments" class="font-14 color-white font-gotham margin-right-60">Treatments</a>
 		<a href="blog" class="font-14 color-white font-gotham">Blog</a>
 	</div>
 	<div class="header-right">
@@ -80,7 +82,54 @@
 	</div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="owl/owl.carousel.min.js"></script>
 
+<script>
+var owl1 = $('#owl1');
+
+owl1.owlCarousel({
+    items:1,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3500,
+    autoplayHoverPause:true,
+    nav:true,
+		navText: ["<img src='assets/images/icons/arrowLeft.png'>","<img src='assets/images/icons/arrowRight.png''>"],
+    dots:true,
+    animateOut: 'fadeOut',
+});
+// var owl3 = $('#owl3');
+// owl3.owlCarousel({
+//     loop:true,
+//     autoplay:false,
+//     autoplayTimeout:3500,
+// 		autoplayHoverPause:false,
+// 		nav: true,
+// 		navText: ["<img src='assets/images/icons/arrowRight.png'>","<img src='assets/images/icons/arrowRight.png''>"],
+//     dots:true,
+// 		animateOut: 'fadeOut',
+		// responsiveClass:true,
+    // responsive:{
+    //     0:{
+		// 				items:1,
+		// 				nav: true
+    //     },
+    //     960:{
+    //         items:2,
+    //         nav:true
+    //     },
+    //     1440:{
+    //         items:3,
+    //         nav:true
+		// 		},
+		// 		1680:{
+		// 			items:3,
+		// 			nav:true
+		// 	},
+    // }
+// });
+</script>
 
 </body>
 </html>

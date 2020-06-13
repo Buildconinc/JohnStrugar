@@ -1,0 +1,20 @@
+<div class="background-color-grey padding-75 border-box flex">
+<!-- left -->
+	<div class="testimonial background-color-grey-dark flex al-it-center ju-co-center">
+		<img class="testimonial-logo" src="./assets/images/JohnStrugar.png">
+	</div>
+	<!-- right -->
+	<div style="position: relative" class="testimonial background-color-white flex flex-column al-it-center ju-co-center">
+		<div class="font-32 line-height-38 color-black margin-bottom-38">Testimonial</div>
+		<div id="owl1" class="owl-carousel owl-theme flex flex-column al-it-center ju-co-center">
+			{% set Testimonial = fetch("Testimonial") %}
+			{% for item in Testimonial %}
+			<div style="width: 100%" class="flex flex-column al-it-center ju-co-center">
+				<div class="font-22 line-height-26 text-align-center color-black margin-bottom-9">{{item.Name}}</div>
+				<div class="font-18 line-height-22 text-align-center color-black margin-bottom-22">{{item.position}}</div>
+				<div class="font-14 line-height-22 text-align-center color-black width-439 margin-bottom-38">{{item.text}}</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
