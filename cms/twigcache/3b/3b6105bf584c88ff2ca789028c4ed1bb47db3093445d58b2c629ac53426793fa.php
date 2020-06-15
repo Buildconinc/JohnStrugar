@@ -38,30 +38,40 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
+        // line 2
+        $context["treatment"] = (($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Treatments", ["id" => (($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 = ($context["_GET"] ?? null)) && is_array($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144) || $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 instanceof ArrayAccess ? ($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144["1"] ?? null) : null)]])) && is_array($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4) || $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 instanceof ArrayAccess ? ($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4[0] ?? null) : null);
+        // line 1
         $this->parent = $this->loadTemplate("base.twig", "treatment.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 2
+    // line 3
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 3
+        // line 4
         echo "
 <!-- intro -->
 <div class=\"flex padding-top-160 padding-bottom-160\">
 \t<div class=\"line-black margin-left-64 margin-top-45\"></div>
 \t<div class=\"flex flex-column\">
 \t\t<div class=\"font-16 line-height-19 color-black margin-left-40 margin-bottom-6\">Treatments</div>
-\t\t<div class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">Spinal diseases of the young</div>
+\t\t<div class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">";
+        // line 10
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Title", [], "any", false, false, false, 10), "html", null, true);
+        echo "</div>
 \t\t<div class=\"flex\">
 \t\t\t<div class=\"flex flex-column margin-right-120\">
-\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-6 width-710\">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</div>
-\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 width-710\">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</div>
+\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 width-710\">";
+        // line 13
+        echo twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Description", [], "any", false, false, false, 13);
+        echo "</div>
 \t\t\t</div>
 \t\t\t<div class=\"flex flex-column\">
-\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-bottom-6 width-710\">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</div>
-\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 width-710\">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</div>
+\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 width-710\">";
+        // line 16
+        echo twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "description2", [], "any", false, false, false, 16);
+        echo "</div>
 \t\t\t</div>
 \t\t</div>
 \t</div>
@@ -69,54 +79,76 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
 
 <!-- video -->
 <div class=\"home-intro flex al-it-end ju-co-center\">
-\t<img class=\"home-intro-play\" src=\"./assets/images/icons/play.png\">
+\t<a data-fancybox id=\"v";
+        // line 24
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "id", [], "any", false, false, false, 24), "html", null, true);
+        echo "\" onclick=\"url2embed('v";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "id", [], "any", false, false, false, 24), "html", null, true);
+        echo "','";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Video", [], "any", false, false, false, 24), "html", null, true);
+        echo "');\">
+\t\t<img class=\"home-intro-play\" src=\"./assets/images/icons/play.png\">\t
+\t</a>
 \t<div class=\"font-24 line-height-29 color-white margin-bottom-38\">video with short sentence</div>
 </div>
 
 <!-- testimonial -->
 ";
-        // line 30
-        $this->loadTemplate("testimonial.twig", "treatment.twig", 30)->display($context);
         // line 31
+        $this->loadTemplate("testimonial.twig", "treatment.twig", 31)->display($context);
+        // line 32
         echo "
 <!-- treatments -->
 <div class=\"font-32 line-height-38 color-black background-color-white padding-left-114 padding-top-90 padding-bottom-90\">Treatments</div>
 <div class=\"flex flex-wrap\">
-\t<!-- 1 -->
+";
+        // line 36
+        $context["Treatments"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Treatments"]);
+        // line 37
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["Treatments"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+            // line 38
+            if (twig_get_attribute($this->env, $this->source, $context["item"], "selected", [], "any", false, false, false, 38)) {
+                // line 39
+                echo "\t<!-- 1 -->
 \t<div class=\"treatments-tretment flex flex-column margin-bottom-81\">
-\t\t<img class=\"treatments-tretment-image margin-bottom-50\" src=\"./assets/images/test2.jpg\">
-\t\t<div class=\"treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22\">Spinal diseases of the young</div>
-\t\t<div class=\"treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114\">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</div>
+\t\t<div class=\"treatments-tretment-image margin-bottom-50\" style=\"background-image: url('img/";
+                // line 41
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 41), "html", null, true);
+                echo "')\"></div>
+\t\t<div class=\"treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22\">";
+                // line 42
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 42), "html", null, true);
+                echo "</div>
+\t\t<div class=\"flex-wrap-7-line treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114\">";
+                // line 43
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Description", [], "any", false, false, false, 43), "html", null, true);
+                echo "</div>
 \t\t<div class=\"flex al-it-center\">
 \t\t\t<div class=\"line-black margin-left-114\"></div>
-\t\t\t<div class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</div>
-\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t<a href=\"treatment/";
+                // line 46
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 46), "html", null, true);
+                echo "\" class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</a>
+\t\t\t<a href=\"treatment/";
+                // line 47
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 47), "html", null, true);
+                echo "\">
+\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t</a>
 \t\t</div>
 \t</div>
-\t<!-- 2 -->
-\t<div class=\"treatments-tretment flex flex-column margin-bottom-81\">
-\t\t<img class=\"treatments-tretment-image margin-bottom-50\" src=\"./assets/images/test2.jpg\">
-\t\t<div class=\"treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22\">Spinal diseases of the young</div>
-\t\t<div class=\"treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114\">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</div>
-\t\t<div class=\"flex al-it-center\">
-\t\t\t<div class=\"line-black margin-left-114\"></div>
-\t\t\t<div class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</div>
-\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
-\t\t</div>
-\t</div>
-\t<!-- 3 -->
-\t<div class=\"treatments-tretment flex flex-column margin-bottom-81\">
-\t\t<img class=\"treatments-tretment-image margin-bottom-50\" src=\"./assets/images/test2.jpg\">
-\t\t<div class=\"treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22\">Spinal diseases of the young</div>
-\t\t<div class=\"treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114\">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</div>
-\t\t<div class=\"flex al-it-center\">
-\t\t\t<div class=\"line-black margin-left-114\"></div>
-\t\t\t<div class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</div>
-\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
-\t\t</div>
-\t</div>
-
-</div>
+\t";
+            }
+            // line 53
+            echo "\t";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 54
+        echo "</div>
 ";
     }
 
@@ -132,7 +164,7 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
 
     public function getDebugInfo()
     {
-        return array (  81 => 31,  79 => 30,  50 => 3,  46 => 2,  35 => 1,);
+        return array (  151 => 54,  145 => 53,  136 => 47,  132 => 46,  126 => 43,  122 => 42,  118 => 41,  114 => 39,  112 => 38,  108 => 37,  106 => 36,  100 => 32,  98 => 31,  84 => 24,  73 => 16,  67 => 13,  61 => 10,  53 => 4,  49 => 3,  44 => 1,  42 => 2,  35 => 1,);
     }
 
     public function getSourceContext()

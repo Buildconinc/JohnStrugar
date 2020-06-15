@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="cms/sharedstyle.css">
 	<link rel="stylesheet" href="owl/assets/owl.carousel.min.css"/>
   <link rel="stylesheet" href="owl/assets/owl.theme.default.css"/>  
+	<link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body >
@@ -82,53 +83,17 @@
 	</div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="owl/owl.carousel.min.js"></script>
+<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+
+<script src="./js/owl.js"></script>
+<script src="./js/video.js"></script>
 
 <script>
-var owl1 = $('#owl1');
-
-owl1.owlCarousel({
-    items:1,
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:3500,
-    autoplayHoverPause:true,
-    nav:true,
-		navText: ["<img src='assets/images/icons/arrowLeft.png'>","<img src='assets/images/icons/arrowRight.png''>"],
-    dots:true,
-    animateOut: 'fadeOut',
-});
-// var owl3 = $('#owl3');
-// owl3.owlCarousel({
-//     loop:true,
-//     autoplay:false,
-//     autoplayTimeout:3500,
-// 		autoplayHoverPause:false,
-// 		nav: true,
-// 		navText: ["<img src='assets/images/icons/arrowRight.png'>","<img src='assets/images/icons/arrowRight.png''>"],
-//     dots:true,
-// 		animateOut: 'fadeOut',
-		// responsiveClass:true,
-    // responsive:{
-    //     0:{
-		// 				items:1,
-		// 				nav: true
-    //     },
-    //     960:{
-    //         items:2,
-    //         nav:true
-    //     },
-    //     1440:{
-    //         items:3,
-    //         nav:true
-		// 		},
-		// 		1680:{
-		// 			items:3,
-		// 			nav:true
-		// 	},
-    // }
-// });
+	$(document).ready(function() {
+		$('.post-text p:has(img)').css({'margin-left':'-3rem', 'margin-right':'-3rem', 'margin-top':'2em', 'margin-bottom':'2em', 'text-align' : 'center',});
+	});
 </script>
 
 </body>

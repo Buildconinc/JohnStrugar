@@ -50,6 +50,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         echo "  <link rel=\"stylesheet\" type=\"text/css\" href=\"cms/sharedstyle.css\">
 \t<link rel=\"stylesheet\" href=\"owl/assets/owl.carousel.min.css\"/>
   <link rel=\"stylesheet\" href=\"owl/assets/owl.theme.default.css\"/>  
+\t<link rel=\"stylesheet\" href=\"fancybox-master/dist/jquery.fancybox.min.css\" />
 \t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles/style.css\">
 </head>
 <body >
@@ -74,14 +75,14 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 <div style=\"height: 2.75rem; width: 100%;\"></div>
 
 ";
-        // line 35
-        $this->displayBlock('content', $context, $blocks);
         // line 36
+        $this->displayBlock('content', $context, $blocks);
+        // line 37
         echo "
 <div class=\"footer\">
 \t<div class=\"footer-left\">
 \t\t";
-        // line 45
+        // line 46
         echo "\t\t<div class=\"footer-left-block\">
 \t\t\t<div class=\"flex flex-column\">
 \t\t\t\t<div class=\"font-46 color-white font-bold margin-bottom-35\">CONTACT</div>
@@ -122,53 +123,17 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t</div>
 </div>
 
-<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
+<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
 <script src=\"owl/owl.carousel.min.js\"></script>
+<script src=\"fancybox-master/dist/jquery.fancybox.min.js\"></script>
+
+<script src=\"./js/owl.js\"></script>
+<script src=\"./js/video.js\"></script>
 
 <script>
-var owl1 = \$('#owl1');
-
-owl1.owlCarousel({
-    items:1,
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:3500,
-    autoplayHoverPause:true,
-    nav:true,
-\t\tnavText: [\"<img src='assets/images/icons/arrowLeft.png'>\",\"<img src='assets/images/icons/arrowRight.png''>\"],
-    dots:true,
-    animateOut: 'fadeOut',
-});
-// var owl3 = \$('#owl3');
-// owl3.owlCarousel({
-//     loop:true,
-//     autoplay:false,
-//     autoplayTimeout:3500,
-// \t\tautoplayHoverPause:false,
-// \t\tnav: true,
-// \t\tnavText: [\"<img src='assets/images/icons/arrowRight.png'>\",\"<img src='assets/images/icons/arrowRight.png''>\"],
-//     dots:true,
-// \t\tanimateOut: 'fadeOut',
-\t\t// responsiveClass:true,
-    // responsive:{
-    //     0:{
-\t\t// \t\t\t\titems:1,
-\t\t// \t\t\t\tnav: true
-    //     },
-    //     960:{
-    //         items:2,
-    //         nav:true
-    //     },
-    //     1440:{
-    //         items:3,
-    //         nav:true
-\t\t// \t\t},
-\t\t// \t\t1680:{
-\t\t// \t\t\titems:3,
-\t\t// \t\t\tnav:true
-\t\t// \t},
-    // }
-// });
+\t\$(document).ready(function() {
+\t\t\$('.post-text p:has(img)').css({'margin-left':'-3rem', 'margin-right':'-3rem', 'margin-top':'2em', 'margin-bottom':'2em', 'text-align' : 'center',});
+\t});
 </script>
 
 </body>
@@ -176,7 +141,7 @@ owl1.owlCarousel({
 ";
     }
 
-    // line 35
+    // line 36
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -194,7 +159,7 @@ owl1.owlCarousel({
 
     public function getDebugInfo()
     {
-        return array (  180 => 35,  85 => 45,  80 => 36,  78 => 35,  50 => 9,  43 => 4,  38 => 1,);
+        return array (  145 => 36,  86 => 46,  81 => 37,  79 => 36,  50 => 9,  43 => 4,  38 => 1,);
     }
 
     public function getSourceContext()

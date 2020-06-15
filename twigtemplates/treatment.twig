@@ -1,4 +1,5 @@
 {% extends "base.twig" %}
+{% set treatment = fetch("Treatments", {"id": _GET['1']})[0] %}
 {% block content %}
 
 <!-- intro -->
@@ -6,15 +7,13 @@
 	<div class="line-black margin-left-64 margin-top-45"></div>
 	<div class="flex flex-column">
 		<div class="font-16 line-height-19 color-black margin-left-40 margin-bottom-6">Treatments</div>
-		<div class="font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50">Spinal diseases of the young</div>
+		<div class="font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50">{{treatment.Title}}</div>
 		<div class="flex">
 			<div class="flex flex-column margin-right-120">
-				<div class="font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-6 width-710">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</div>
-				<div class="font-14 color-black font-300 line-height-22 margin-left-40 width-710">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</div>
+				<div class="font-14 color-black font-300 line-height-22 margin-left-40 width-710">{{treatment.Description|raw}}</div>
 			</div>
 			<div class="flex flex-column">
-				<div class="font-14 color-black font-300 line-height-22 margin-bottom-6 width-710">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</div>
-				<div class="font-14 color-black font-300 line-height-22 width-710">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</div>
+				<div class="font-14 color-black font-300 line-height-22 width-710">{{treatment.description2|raw}}</div>
 			</div>
 		</div>
 	</div>
@@ -22,7 +21,9 @@
 
 <!-- video -->
 <div class="home-intro flex al-it-end ju-co-center">
-	<img class="home-intro-play" src="./assets/images/icons/play.png">
+	<a data-fancybox id="v{{treatment.id}}" onclick="url2embed('v{{treatment.id}}','{{treatment.Video}}');">
+		<img class="home-intro-play" src="./assets/images/icons/play.png">	
+	</a>
 	<div class="font-24 line-height-29 color-white margin-bottom-38">video with short sentence</div>
 </div>
 
@@ -32,39 +33,23 @@
 <!-- treatments -->
 <div class="font-32 line-height-38 color-black background-color-white padding-left-114 padding-top-90 padding-bottom-90">Treatments</div>
 <div class="flex flex-wrap">
+{% set Treatments = fetch("Treatments") %}
+{% for item in Treatments %}
+{% if item.selected %}
 	<!-- 1 -->
 	<div class="treatments-tretment flex flex-column margin-bottom-81">
-		<img class="treatments-tretment-image margin-bottom-50" src="./assets/images/test2.jpg">
-		<div class="treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22">Spinal diseases of the young</div>
-		<div class="treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</div>
+		<div class="treatments-tretment-image margin-bottom-50" style="background-image: url('img/{{item.image}}')"></div>
+		<div class="treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22">{{item.Title}}</div>
+		<div class="flex-wrap-7-line treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114">{{item.Description}}</div>
 		<div class="flex al-it-center">
 			<div class="line-black margin-left-114"></div>
-			<div class="font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19">Read more</div>
-			<img src="./assets/images/icons/arrowRight.png">
+			<a href="treatment/{{item.Slug}}" class="font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19">Read more</a>
+			<a href="treatment/{{item.Slug}}">
+				<img src="./assets/images/icons/arrowRight.png">
+			</a>
 		</div>
 	</div>
-	<!-- 2 -->
-	<div class="treatments-tretment flex flex-column margin-bottom-81">
-		<img class="treatments-tretment-image margin-bottom-50" src="./assets/images/test2.jpg">
-		<div class="treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22">Spinal diseases of the young</div>
-		<div class="treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</div>
-		<div class="flex al-it-center">
-			<div class="line-black margin-left-114"></div>
-			<div class="font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19">Read more</div>
-			<img src="./assets/images/icons/arrowRight.png">
-		</div>
-	</div>
-	<!-- 3 -->
-	<div class="treatments-tretment flex flex-column margin-bottom-81">
-		<img class="treatments-tretment-image margin-bottom-50" src="./assets/images/test2.jpg">
-		<div class="treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22">Spinal diseases of the young</div>
-		<div class="treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</div>
-		<div class="flex al-it-center">
-			<div class="line-black margin-left-114"></div>
-			<div class="font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19">Read more</div>
-			<img src="./assets/images/icons/arrowRight.png">
-		</div>
-	</div>
-
+	{% endif %}
+	{% endfor %}
 </div>
 {% endblock %}

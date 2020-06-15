@@ -35,31 +35,38 @@
 .line {
 	&-white {
 		width: 6.125rem;
+		min-width: 6.125rem;
 		height: 1px;
 		background-color: #ffffff;
 		@media screen and (max-width: 1366px){
 			width: 4.125rem;
+			min-width: 4.125rem;
 		}
 	}
 	&-black {
 		width: 6.125rem;
+		min-width: 6.125rem;
 		height: 1px;
 		background-color: #000000;
 		@media screen and (max-width: 1366px){
 			width: 4.125rem;
+			min-width: 4.125rem;
 		}
 	}
 	&-transparent {
 		width: 6.125rem;
+		min-width: 6.125rem;
 		height: 1px;
 		background-color: transparent;
 		@media screen and (max-width: 1366px){
 			width: 4.125rem;
+			min-width: 4.125rem;
 		}
 	}
 	&-small {
 		&-black {
 			width: 3.375rem;
+			min-width: 3.375rem;
 			height: 1px;
 			background-color: #000000;
 		}
@@ -67,6 +74,9 @@
 }
 
 .image {
-	max-width: 24vw;
-	max-height: 19.625rem;
+	width: 24vw;
+	height: 19.625rem;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }

@@ -32,6 +32,9 @@
 .treatments-tretment-image {
   width: 100%;
   height: 27vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .treatments-tretment-text {
   max-width: 22.5vw;

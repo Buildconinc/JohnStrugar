@@ -73,11 +73,16 @@ class __TwigTemplate_f9586f2d35467df14fe72940cae834e3901c93102989566cf2ba6dba3fc
 
 <!-- picture -->
 <div class=\"about-picture-1 flex al-it-center\">
-\t<img class=\"about-picture-1-play\" src=\"./assets/images/icons/play_gold.png\">
+\t<a data-fancybox href=\"https://www.youtube.com/watch?v=DVHr8Dy8cPE&feature=youtu.be\">
+\t\t<img class=\"home-intro-play\" src=\"./assets/images/icons/play.png\">\t</a>
 </div>
 
 <!-- treatments -->
-
+";
+        // line 34
+        $this->loadTemplate("treatments-slider.twig", "about_us.twig", 34)->display($context);
+        // line 35
+        echo "
 <!-- picture -->
 <div class=\"about-picture-2 flex al-it-center\"></div>
 
@@ -138,7 +143,7 @@ class __TwigTemplate_f9586f2d35467df14fe72940cae834e3901c93102989566cf2ba6dba3fc
 
     public function getDebugInfo()
     {
-        return array (  50 => 3,  46 => 2,  35 => 1,);
+        return array (  85 => 35,  83 => 34,  50 => 3,  46 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
