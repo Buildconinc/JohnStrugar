@@ -24,7 +24,6 @@
 	<a data-fancybox id="v{{treatment.id}}" onclick="url2embed('v{{treatment.id}}','{{treatment.Video}}');">
 		<img class="home-intro-play" src="./assets/images/icons/play.png">	
 	</a>
-	<div class="font-24 line-height-29 color-white margin-bottom-38">video with short sentence</div>
 </div>
 
 <!-- testimonial -->
@@ -35,7 +34,6 @@
 <div class="flex flex-wrap">
 {% set Treatments = fetch("Treatments") %}
 {% for item in Treatments %}
-{% if item.selected %}
 	<!-- 1 -->
 	<div class="treatments-tretment flex flex-column margin-bottom-81">
 		<div class="treatments-tretment-image margin-bottom-50" style="background-image: url('img/{{item.image}}')"></div>
@@ -49,7 +47,6 @@
 			</a>
 		</div>
 	</div>
-	{% endif %}
 	{% endfor %}
 </div>
 {% endblock %}

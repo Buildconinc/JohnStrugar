@@ -174,7 +174,7 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 \t\t</div>
 \t\t<div class=\"flex al-it-center\">
 \t\t\t<div class=\"line-black margin-left-64\"></div>
-\t\t\t<a href=\"about_us\" class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Education and Qualifications</a>
+\t\t\t<a href=\"about_us\" class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</a>
 \t\t\t<a href=\"about_us\">
 \t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
 \t\t\t</a>

@@ -5,13 +5,11 @@
 		{% set Treatments = fetch("Treatments") %}
 		<div id="owl2" class="owl-carousel owl-theme flex">
 		{% for item in Treatments %}
-		{% if item.selected and loop.index < 4 %}
 			<div class="flex flex-column margin-right-120">
 				<div class="font-20 color-black font-bold line-height-24 margin-bottom-22">{{item.Title}}</div>
 				<div class="flex-wrap-7-line font-14 color-black font-300 line-height-22 margin-bottom-6 width-710">{{item.short_text}}</div>
 			</div>
-		{% endif %}
-			{% endfor %}
+		{% endfor %}
 		</div>
 	</div>
 </div>

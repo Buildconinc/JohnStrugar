@@ -47,51 +47,24 @@ class __TwigTemplate_90920c5ae2f6faacca1166d0f6e00e16d7b965546a6ccfc05e2931755c9
         // line 7
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["Treatments"] ?? null));
-        $context['loop'] = [
-          'parent' => $context['_parent'],
-          'index0' => 0,
-          'index'  => 1,
-          'first'  => true,
-        ];
-        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof \Countable)) {
-            $length = count($context['_seq']);
-            $context['loop']['revindex0'] = $length - 1;
-            $context['loop']['revindex'] = $length;
-            $context['loop']['length'] = $length;
-            $context['loop']['last'] = 1 === $length;
-        }
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             // line 8
-            echo "\t\t";
-            if ((twig_get_attribute($this->env, $this->source, $context["item"], "selected", [], "any", false, false, false, 8) && (twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 8) < 4))) {
-                // line 9
-                echo "\t\t\t<div class=\"flex flex-column margin-right-120\">
+            echo "\t\t\t<div class=\"flex flex-column margin-right-120\">
 \t\t\t\t<div class=\"font-20 color-black font-bold line-height-24 margin-bottom-22\">";
-                // line 10
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 10), "html", null, true);
-                echo "</div>
+            // line 9
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 9), "html", null, true);
+            echo "</div>
 \t\t\t\t<div class=\"flex-wrap-7-line font-14 color-black font-300 line-height-22 margin-bottom-6 width-710\">";
-                // line 11
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 11), "html", null, true);
-                echo "</div>
+            // line 10
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 10), "html", null, true);
+            echo "</div>
 \t\t\t</div>
 \t\t";
-            }
-            // line 14
-            echo "\t\t\t";
-            ++$context['loop']['index0'];
-            ++$context['loop']['index'];
-            $context['loop']['first'] = false;
-            if (isset($context['loop']['length'])) {
-                --$context['loop']['revindex0'];
-                --$context['loop']['revindex'];
-                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
-            }
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 15
+        // line 13
         echo "\t\t</div>
 \t</div>
 </div>";
@@ -109,7 +82,7 @@ class __TwigTemplate_90920c5ae2f6faacca1166d0f6e00e16d7b965546a6ccfc05e2931755c9
 
     public function getDebugInfo()
     {
-        return array (  95 => 15,  81 => 14,  75 => 11,  71 => 10,  68 => 9,  65 => 8,  48 => 7,  45 => 6,  43 => 5,  37 => 1,);
+        return array (  68 => 13,  59 => 10,  55 => 9,  52 => 8,  48 => 7,  45 => 6,  43 => 5,  37 => 1,);
     }
 
     public function getSourceContext()
