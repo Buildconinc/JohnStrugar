@@ -60,6 +60,9 @@ p {
 	line-height: inherit;
 	font-weight: inherit;
 	color: inherit;
+	img {
+		max-width: 43rem;
+	}
 }
 
 button {
@@ -95,6 +98,9 @@ button {
 	height: calc(~'100vh - 2.75rem');
 	width: 100%;
 	display: flex;
+	@media screen and (max-width: 1024px) {
+		height: 43rem;
+	}
 	&-left {
 		width: 50%;
 		height: 100%;
@@ -120,6 +126,11 @@ button {
 			padding-left: 11.438rem;
 			padding-top: 8.375rem;
 			padding-bottom: 5.938rem;
+			@media screen and (max-width: 1024px) {
+				padding-left: 4.438rem;
+				padding-top: 4.375rem;
+				padding-bottom: 3.938rem;
+			}
 		}
 	}
 	&-right {

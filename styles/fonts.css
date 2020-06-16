@@ -12,23 +12,58 @@
 .font-64 {
   font-size: 4rem;
 }
+@media screen and (max-width: 1024px) {
+  .font-64 {
+    font-size: 1.625rem;
+  }
+}
 .font-46 {
   font-size: 2.875rem;
+}
+@media screen and (max-width: 1024px) {
+  .font-46 {
+    font-size: 1.625rem;
+  }
 }
 .font-36 {
   font-size: 2.25rem;
 }
+@media screen and (max-width: 1024px) {
+  .font-36 {
+    font-size: 1.5rem;
+  }
+}
 .font-32 {
   font-size: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .font-32 {
+    font-size: 1.5rem;
+  }
 }
 .font-24 {
   font-size: 1.5rem;
 }
+@media screen and (max-width: 1024px) {
+  .font-24 {
+    font-size: 1rem;
+  }
+}
 .font-22 {
   font-size: 1.135rem;
 }
+@media screen and (max-width: 1024px) {
+  .font-22 {
+    font-size: 1rem;
+  }
+}
 .font-20 {
   font-size: 1.25rem;
+}
+@media screen and (max-width: 1024px) {
+  .font-20 {
+    font-size: 1rem;
+  }
 }
 .font-18 {
   font-size: 1.125rem;
@@ -54,23 +89,58 @@
 .line-height-24 {
   line-height: 1.5rem;
 }
+@media screen and (max-width: 1024px) {
+  .line-height-24 {
+    line-height: 1.188rem;
+  }
+}
 .line-height-26 {
   line-height: 1.625rem;
+}
+@media screen and (max-width: 1024px) {
+  .line-height-26 {
+    line-height: 1.188rem;
+  }
 }
 .line-height-28 {
   line-height: 1.75rem;
 }
+@media screen and (max-width: 1024px) {
+  .line-height-28 {
+    line-height: 1.375rem;
+  }
+}
 .line-height-38 {
   line-height: 2.375rem;
+}
+@media screen and (max-width: 1024px) {
+  .line-height-38 {
+    line-height: 1.75rem;
+  }
 }
 .line-height-42 {
   line-height: 2.625rem;
 }
+@media screen and (max-width: 1024px) {
+  .line-height-42 {
+    line-height: 1.75rem;
+  }
+}
 .line-height-54 {
   line-height: 3.375rem;
 }
+@media screen and (max-width: 1024px) {
+  .line-height-54 {
+    line-height: 1.938rem;
+  }
+}
 .line-height-75 {
   line-height: 4.688rem;
+}
+@media screen and (max-width: 1024px) {
+  .line-height-75 {
+    line-height: 1.938rem;
+  }
 }
 .text-align-center {
   text-align: center;

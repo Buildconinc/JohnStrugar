@@ -9,6 +9,9 @@
 		background-repeat: no-repeat;
 		z-index: 99;
 		position: relative;
+		@media screen and (max-width: 1024px) {
+			height: 34.375rem;
+		}
 		&-play {
 			position: absolute;
 			top: 0;
@@ -22,8 +25,12 @@
 		}
 	}
 	&-about {
+		height: calc(~'100vh - 2.75rem');
+		@media screen and (max-width: 1024px) {
+			height: 45.375rem;
+		}
 		&-image {
-			height: calc(~'100vh - 2.75rem');
+			height: 100%;
 			background-image: url(../assets/images/home_about.jpg);
 			background-size: cover;
 			background-position: center;
@@ -75,6 +82,7 @@
 
 .image {
 	width: 24vw;
+	min-width: 18.325rem;
 	height: 19.625rem;
 	background-position: center;
 	background-size: cover;

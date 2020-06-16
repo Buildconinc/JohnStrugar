@@ -49,7 +49,9 @@ class __TwigTemplate_90920c5ae2f6faacca1166d0f6e00e16d7b965546a6ccfc05e2931755c9
         $context['_seq'] = twig_ensure_traversable(($context["Treatments"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             // line 8
-            echo "\t\t\t<div class=\"flex flex-column margin-right-120\">
+            echo "\t\t\t<a href=\"treatment/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 8), "html", null, true);
+            echo "\" class=\"flex flex-column margin-right-120\">
 \t\t\t\t<div class=\"font-20 color-black font-bold line-height-24 margin-bottom-22\">";
             // line 9
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 9), "html", null, true);
@@ -58,7 +60,7 @@ class __TwigTemplate_90920c5ae2f6faacca1166d0f6e00e16d7b965546a6ccfc05e2931755c9
             // line 10
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 10), "html", null, true);
             echo "</div>
-\t\t\t</div>
+\t\t\t</a>
 \t\t";
         }
         $_parent = $context['_parent'];
@@ -82,7 +84,7 @@ class __TwigTemplate_90920c5ae2f6faacca1166d0f6e00e16d7b965546a6ccfc05e2931755c9
 
     public function getDebugInfo()
     {
-        return array (  68 => 13,  59 => 10,  55 => 9,  52 => 8,  48 => 7,  45 => 6,  43 => 5,  37 => 1,);
+        return array (  70 => 13,  61 => 10,  57 => 9,  52 => 8,  48 => 7,  45 => 6,  43 => 5,  37 => 1,);
     }
 
     public function getSourceContext()

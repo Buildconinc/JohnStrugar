@@ -62,14 +62,14 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t\t</a>
 \t\t<a href=\"about_us\" class=\"font-14 color-white font-gotham margin-right-60\">About</a>
 \t\t<a href=\"treatments\" class=\"font-14 color-white font-gotham margin-right-60\">Treatments</a>
-\t\t<a href=\"blog\" class=\"font-14 color-white font-gotham\">Blog</a>
+\t\t<a href=\"blog\" class=\"font-14 color-white font-gotham margin-right-60\">Blog</a>
 \t</div>
 \t<div class=\"header-right\">
-\t\t<p class=\"font-14 color-white font-gotham margin-right-16\">Address</p>
-\t\t<p class=\"font-14 color-white font-gotham margin-right-55\">500 Chase Parkway Waterbury, CT 06708</p>
-\t\t<p class=\"font-14 color-white font-gotham margin-right-16\">Phone</p>
-\t\t<p class=\"font-14 color-white font-gotham margin-right-55\">+1 (0) 44 832 58 58</p>
-\t\t<a class=\"font-14 color-white font-gotham\">Contact</a>
+\t\t<p class=\"font-14 color-white font-gotham margin-right-16 display-none-1024\">Address</p>
+\t\t<p class=\"font-14 color-white font-gotham margin-right-55 display-none-1024\">500 Chase Parkway Waterbury, CT 06708</p>
+\t\t<p class=\"font-14 color-white font-gotham margin-right-16 display-none-1024\">Phone</p>
+\t\t<p class=\"font-14 color-white font-gotham margin-right-55 display-none-1024\">+1 (0) 44 832 58 58</p>
+\t\t<a href=\"#contact\" class=\"font-14 color-white font-gotham\">Contact</a>
 \t</div>
 </div>
 <div style=\"height: 2.75rem; width: 100%;\"></div>
@@ -79,7 +79,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         $this->displayBlock('content', $context, $blocks);
         // line 37
         echo "
-<div class=\"footer\">
+<div id=\"contact\" class=\"footer\">
 \t<div class=\"footer-left\">
 \t\t";
         // line 46

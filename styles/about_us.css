@@ -9,6 +9,11 @@
   z-index: 99;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .about-picture-1 {
+    height: 40.375rem;
+  }
+}
 .about-picture-1-play {
   position: absolute;
   top: 0;
@@ -29,8 +34,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 1024px) {
+  .about-picture-2 {
+    height: 40.375rem;
+  }
+}
 .about-logo {
   height: 40.625rem;
   width: 100%;
   background-color: #003E7E;
+}
+@media screen and (max-width: 1366px) {
+  .about-logo {
+    height: 29.375rem;
+  }
 }

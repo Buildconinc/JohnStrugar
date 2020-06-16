@@ -5,7 +5,7 @@
 <div class="home-intro flex al-it-center">
 	<a data-fancybox href="https://www.youtube.com/watch?v=DVHr8Dy8cPE&feature=youtu.be">
 		<img class="home-intro-play" src="./assets/images/icons/play.png">	</a>
-	<div class="flex flex-column">
+	<div class="flex flex-column display-none-1024">
 		 <div class="flex">
 			<div class="line-white margin-left-64 margin-top-55"></div>
 			<div class="flex flex-column">
@@ -33,23 +33,21 @@
 		<div class="line-black margin-left-64 margin-top-19"></div>
 		<div class="flex flex-column width-80per">
 			<div class="font-32 color-black line-height-38 margin-left-40 margin-bottom-81">General Health Advice</div>
-			<div class="flex ju-co-between margin-left-40 margin-bottom-97 width-100per">
+			<div class="flex ju-co-between flex-wrap margin-left-40 margin-bottom-97 width-100per">
 			{% set Blog = fetch("Blog") %}
 			{% for item in Blog %}
-			{% if item.selected and loop.index < 4 %}
 				<div class="flex flex-column">
 					<img class="image margin-bottom-22" style="background-image: url('img/{{item.Photo}}')">
 					<div class="width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14">{{item.Title}}</div>
 					<div class="flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22">{{item.short_text}}</div>
 					<div class="flex al-it-center">
-						<div class="line-small-black margin-right-16"></div>
+						<div class="line-small-black"></div>
 						<a href="post/{{item.Slug}}" class="font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19">Read more</a>
 						<a href="post/{{item.Slug}}">
 							<img src="./assets/images/icons/arrowRight.png">
 						</a>
 					</div>
 				</div>
-				{% endif %}
 				{% endfor %}
 			</div>
 		</div>
@@ -57,7 +55,7 @@
 </div>
 
 <!-- about -->
-<div class="flex">
+<div class="flex home-about">
 	<div class="backgroung-color-white flex flex-column ju-co-center width-50per">
 		<div class="flex">
 			<div class="line-black margin-left-64 margin-top-55"></div>

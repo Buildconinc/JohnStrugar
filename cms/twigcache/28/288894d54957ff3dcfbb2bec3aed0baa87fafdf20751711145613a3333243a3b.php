@@ -74,19 +74,27 @@ class __TwigTemplate_ab1c89aae8fc3bf4a78957763676fa746a247c5b5b2bcb9e6b8b231149b
 <!-- share -->
 <div class=\"flex ju-co-center margin-bottom-97\">
 \t<div class=\"margin-left-16 margin-right-16\">
-\t\t";
-        // line 20
-        echo "\t\t\t<img src=\"./assets/images/icons/twitter.png\">
-\t\t";
-        // line 22
-        echo "\t</div>
+\t\t<a href=\"https://twitter.com/share?url=";
+        // line 19
+        echo twig_escape_filter($this->env, twig_urlencode_filter(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Slug", [], "any", false, false, false, 19)), "html", null, true);
+        echo "&amp;url=";
+        echo twig_escape_filter($this->env, twig_urlencode_filter(($context["_BASE"] ?? null)), "html", null, true);
+        echo "prost%2F";
+        echo twig_escape_filter($this->env, twig_urlencode_filter(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Slug", [], "any", false, false, false, 19)), "html", null, true);
+        echo "\" target=\"_blank\">
+\t\t\t<img src=\"./assets/images/icons/twitter.png\">
+\t\t</a>
+\t</div>
 \t<div class=\"margin-left-16 margin-right-16\">
-\t\t";
-        // line 25
-        echo "\t\t\t<img src=\"./assets/images/icons/fb.png\">
-\t\t";
-        // line 27
-        echo "\t</div>
+\t\t<a href=\"http://www.facebook.com/sharer/sharer.php?u=";
+        // line 24
+        echo twig_escape_filter($this->env, twig_urlencode_filter(($context["_BASE"] ?? null)), "html", null, true);
+        echo "prost%2F";
+        echo twig_escape_filter($this->env, twig_urlencode_filter(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Slug", [], "any", false, false, false, 24)), "html", null, true);
+        echo "\" target=\"_blank\">
+\t\t\t<img src=\"./assets/images/icons/fb.png\">
+\t\t</a>
+\t</div>
 </div>
 
 <!-- blog posts -->
@@ -184,7 +192,7 @@ class __TwigTemplate_ab1c89aae8fc3bf4a78957763676fa746a247c5b5b2bcb9e6b8b231149b
 
     public function getDebugInfo()
     {
-        return array (  160 => 52,  146 => 51,  135 => 43,  131 => 42,  127 => 41,  124 => 40,  121 => 39,  103 => 38,  101 => 37,  89 => 27,  86 => 25,  82 => 22,  79 => 20,  70 => 13,  62 => 8,  58 => 7,  53 => 4,  49 => 3,  44 => 1,  42 => 2,  35 => 1,);
+        return array (  168 => 52,  154 => 51,  143 => 43,  139 => 42,  135 => 41,  132 => 40,  129 => 39,  111 => 38,  109 => 37,  91 => 24,  79 => 19,  70 => 13,  62 => 8,  58 => 7,  53 => 4,  49 => 3,  44 => 1,  42 => 2,  35 => 1,);
     }
 
     public function getSourceContext()

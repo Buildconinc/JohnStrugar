@@ -6,6 +6,11 @@
   background-position: bottom;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 1024px) {
+  .treatments-intro {
+    height: 40.375rem;
+  }
+}
 .treatments-intro-title {
   font-size: 4rem;
   line-height: 4.688rem;
@@ -18,12 +23,24 @@
     max-width: 24.125rem;
   }
 }
+@media screen and (max-width: 1024px) {
+  .treatments-intro-title {
+    font-size: 1.8625rem;
+    line-height: 1.938rem;
+    max-width: 20.125rem;
+  }
+}
 .treatments-intro-text {
   max-width: 32.25rem;
 }
 @media screen and (max-width: 1440px) {
   .treatments-intro-text {
     max-width: 24.125rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .treatments-intro-text {
+    max-width: 20.125rem;
   }
 }
 .treatments-tretment {

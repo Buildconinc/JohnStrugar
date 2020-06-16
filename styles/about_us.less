@@ -10,6 +10,9 @@
 			background-repeat: no-repeat;
 			z-index: 99;
 			position: relative;
+			@media screen and (max-width: 1024px) {
+				height: 40.375rem;
+			}
 			&-play {
 				position: absolute;
 				top: 0;
@@ -30,11 +33,17 @@
 			background-position: bottom;
 			background-size: cover;
 			background-repeat: no-repeat;
+			@media screen and (max-width: 1024px) {
+				height: 40.375rem;
+			}
 		}
 	}
 	&-logo {
 		height: 40.625rem;
 		width: 100%;
 		background-color: #003E7E;
+		@media screen and (max-width: 1366px){
+			height: 29.375rem;
+		}
 	}
 }

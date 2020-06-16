@@ -9,6 +9,11 @@
   z-index: 99;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .home-intro {
+    height: 34.375rem;
+  }
+}
 .home-intro-play {
   position: absolute;
   top: 0;
@@ -20,8 +25,16 @@
   width: 4.688rem;
   cursor: pointer;
 }
-.home-about-image {
+.home-about {
   height: calc(100vh - 2.75rem);
+}
+@media screen and (max-width: 1024px) {
+  .home-about {
+    height: 45.375rem;
+  }
+}
+.home-about-image {
+  height: 100%;
   background-image: url(../assets/images/home_about.jpg);
   background-size: cover;
   background-position: center;
@@ -71,6 +84,7 @@
 }
 .image {
   width: 24vw;
+  min-width: 18.325rem;
   height: 19.625rem;
   background-position: center;
   background-size: cover;

@@ -49,7 +49,7 @@ class __TwigTemplate_f9586f2d35467df14fe72940cae834e3901c93102989566cf2ba6dba3fc
         // line 3
         echo "
 <!-- about -->
-<div class=\"flex\">
+<div class=\"flex home-about\">
 \t<div class=\"backgroung-color-white flex flex-column ju-co-center width-50per\">
 \t\t<div class=\"flex\">
 \t\t\t<div class=\"line-black margin-left-64 margin-top-55\"></div>
@@ -74,7 +74,7 @@ class __TwigTemplate_f9586f2d35467df14fe72940cae834e3901c93102989566cf2ba6dba3fc
 <!-- picture -->
 <div class=\"about-picture-1 flex al-it-center\">
 \t<a data-fancybox href=\"https://www.youtube.com/watch?v=DVHr8Dy8cPE&feature=youtu.be\">
-\t\t<img class=\"home-intro-play\" src=\"./assets/images/icons/play.png\">\t</a>
+\t\t<img class=\"home-intro-play\" src=\"./assets/images/icons/play_gold.png\">\t</a>
 </div>
 
 <!-- treatments -->
