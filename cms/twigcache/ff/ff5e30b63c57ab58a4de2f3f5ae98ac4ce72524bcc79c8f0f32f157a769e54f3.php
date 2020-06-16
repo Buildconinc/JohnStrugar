@@ -48,6 +48,9 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
   ";
         // line 9
         echo "  <link rel=\"stylesheet\" type=\"text/css\" href=\"cms/sharedstyle.css\">
+\t<link rel=\"stylesheet\" href=\"owl/assets/owl.carousel.min.css\"/>
+  <link rel=\"stylesheet\" href=\"owl/assets/owl.theme.default.css\"/>  
+\t<link rel=\"stylesheet\" href=\"fancybox-master/dist/jquery.fancybox.min.css\" />
 \t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles/style.css\">
 </head>
 <body >
@@ -58,7 +61,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t\t\t<img class=\"margin-right-100\" src=\"./assets/images/full-logo.png\">
 \t\t</a>
 \t\t<a href=\"about_us\" class=\"font-14 color-white font-gotham margin-right-60\">About</a>
-\t\t<a class=\"font-14 color-white font-gotham margin-right-60\">Treatments</a>
+\t\t<a href=\"treatments\" class=\"font-14 color-white font-gotham margin-right-60\">Treatments</a>
 \t\t<a href=\"blog\" class=\"font-14 color-white font-gotham\">Blog</a>
 \t</div>
 \t<div class=\"header-right\">
@@ -72,14 +75,14 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 <div style=\"height: 2.75rem; width: 100%;\"></div>
 
 ";
-        // line 33
+        // line 36
         $this->displayBlock('content', $context, $blocks);
-        // line 34
+        // line 37
         echo "
 <div class=\"footer\">
 \t<div class=\"footer-left\">
 \t\t";
-        // line 43
+        // line 46
         echo "\t\t<div class=\"footer-left-block\">
 \t\t\t<div class=\"flex flex-column\">
 \t\t\t\t<div class=\"font-46 color-white font-bold margin-bottom-35\">CONTACT</div>
@@ -120,14 +123,25 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t</div>
 </div>
 
+<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
+<script src=\"owl/owl.carousel.min.js\"></script>
+<script src=\"fancybox-master/dist/jquery.fancybox.min.js\"></script>
 
+<script src=\"./js/owl.js\"></script>
+<script src=\"./js/video.js\"></script>
+
+<script>
+\t\$(document).ready(function() {
+\t\t\$('.post-text p:has(img)').css({'margin-left':'-3rem', 'margin-right':'-3rem', 'margin-top':'2em', 'margin-bottom':'2em', 'text-align' : 'center',});
+\t});
+</script>
 
 </body>
 </html>
 ";
     }
 
-    // line 33
+    // line 36
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -145,7 +159,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
     public function getDebugInfo()
     {
-        return array (  131 => 33,  83 => 43,  78 => 34,  76 => 33,  50 => 9,  43 => 4,  38 => 1,);
+        return array (  145 => 36,  86 => 46,  81 => 37,  79 => 36,  50 => 9,  43 => 4,  38 => 1,);
     }
 
     public function getSourceContext()

@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {# <meta name="description" content="{% block description %}{% endblock %}"/> #}
   <link rel="stylesheet" type="text/css" href="cms/sharedstyle.css">
+	<link rel="stylesheet" href="owl/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="owl/assets/owl.theme.default.css"/>  
+	<link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body >
@@ -17,7 +20,7 @@
 			<img class="margin-right-100" src="./assets/images/full-logo.png">
 		</a>
 		<a href="about_us" class="font-14 color-white font-gotham margin-right-60">About</a>
-		<a class="font-14 color-white font-gotham margin-right-60">Treatments</a>
+		<a href="treatments" class="font-14 color-white font-gotham margin-right-60">Treatments</a>
 		<a href="blog" class="font-14 color-white font-gotham">Blog</a>
 	</div>
 	<div class="header-right">
@@ -80,7 +83,18 @@
 	</div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
 
+<script src="./js/owl.js"></script>
+<script src="./js/video.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('.post-text p:has(img)').css({'margin-left':'-3rem', 'margin-right':'-3rem', 'margin-top':'2em', 'margin-bottom':'2em', 'text-align' : 'center',});
+	});
+</script>
 
 </body>
 </html>

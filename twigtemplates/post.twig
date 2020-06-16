@@ -1,0 +1,64 @@
+{% extends "base.twig" %}
+{% set Post = fetch("Blog", {"id": _GET['1']})[0] %}
+{% block content %}
+
+<!-- title -->
+<div class="flex flex-column al-it-center margin-top-97 margin-bottom-81">
+	<div class="font-46 color-black line-height-54 margin-bottom-22 text-align-center width-462">{{Post.Title}}</div>
+	<div class="font-18 color-black line-height-21 margin-botton-81">{{Post.date}}</div>
+</div>
+
+<!-- body -->
+<div class="flex ju-co-center margin-bottom-81">
+	<div id="html" class="post-text font-14 color-black line-height-22">{{Post.body|raw}}</div>
+</div>
+
+<!-- share -->
+<div class="flex ju-co-center margin-bottom-97">
+	<div class="margin-left-16 margin-right-16">
+		{# <a href="https://twitter.com/share?url={{post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank"> #}
+			<img src="./assets/images/icons/twitter.png">
+		{# </a> #}
+	</div>
+	<div class="margin-left-16 margin-right-16">
+		{# <a href="http://www.facebook.com/sharer/sharer.php?u={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank"> #}
+			<img src="./assets/images/icons/fb.png">
+		{# </a> #}
+	</div>
+</div>
+
+<!-- blog posts -->
+<div class="background-color-grey flex">
+	<div class="flex margin-top-97 width-100per">
+		<div class="line-black margin-left-64 margin-top-19"></div>
+		<div class="flex flex-column width-80per">
+			<div class="font-32 color-black line-height-38 margin-left-40 margin-bottom-81">General Health Advice</div>
+			<div class="flex ju-co-between margin-left-40 margin-bottom-97 width-100per">
+			{% set Blog = fetch("Blog") %}
+			{% for item in Blog %}
+			{% if item.selected and loop.index < 4 %}
+				<div class="flex flex-column">
+					<img class="image margin-bottom-22" style="background-image: url('img/{{item.Photo}}')">
+					<div class="width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14">{{item.Title}}</div>
+					<div class="flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22">{{item.short_text}}</div>
+					<div class="flex al-it-center">
+						<div class="line-small-black margin-right-16"></div>
+						<div class="font-16 color-black line-height-19 margin-right-19">Read more</div>
+						<img src="./assets/images/icons/arrowRight.png">
+					</div>
+				</div>
+				{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>	
+</div>
+
+<!-- back -->
+<div class="flex al-it-center ju-co-center background-color-white margin-top-97 margin-bottom-97">
+	<a href="blog"><img class="margin-right-19" src="./assets/images/icons/arrowLeft.png"></a>
+	<a href="blog" class="font-16 color-black line-height-19 margin-right-19">Back to Blog</a>
+	<div class="line-small-black"></div>
+</div>
+
+{% endblock %}

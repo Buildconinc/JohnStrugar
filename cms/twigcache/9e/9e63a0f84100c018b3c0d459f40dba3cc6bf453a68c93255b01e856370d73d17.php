@@ -50,7 +50,8 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
         echo "
 <!-- intro -->
 <div class=\"home-intro flex al-it-center\">
-\t<img class=\"home-intro-play\" src=\"./assets/images/icons/play.png\">
+\t<a data-fancybox href=\"https://www.youtube.com/watch?v=DVHr8Dy8cPE&feature=youtu.be\">
+\t\t<img class=\"home-intro-play\" src=\"./assets/images/icons/play.png\">\t</a>
 \t<div class=\"flex flex-column\">
 \t\t <div class=\"flex\">
 \t\t\t<div class=\"line-white margin-left-64 margin-top-55\"></div>
@@ -62,14 +63,20 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 \t\t</div>
 \t\t<div class=\"flex al-it-center\">
 \t\t\t<div class=\"line-white margin-left-64\"></div>
-\t\t\t<div class=\"font-16 font-bold color-white line-height-19 margin-left-40 margin-right-19\">Read more</div>
-\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t<a href=\"treatments\" class=\"font-16 font-gotham color-white line-height-19 margin-left-40 margin-right-19\">Read more</a>
+\t\t\t<a href=\"treatments\">
+\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t</a>
 \t\t</div>
 \t</div>
 </div>
 
 <!-- treatments -->
-
+";
+        // line 28
+        $this->loadTemplate("treatments-slider.twig", "index.twig", 28)->display($context);
+        // line 29
+        echo "
 <!-- blog posts -->
 <div class=\"background-color-grey flex\">
 \t<div class=\"flex margin-top-97 width-100per\">
@@ -77,40 +84,76 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 \t\t<div class=\"flex flex-column width-80per\">
 \t\t\t<div class=\"font-32 color-black line-height-38 margin-left-40 margin-bottom-81\">General Health Advice</div>
 \t\t\t<div class=\"flex ju-co-between margin-left-40 margin-bottom-97 width-100per\">
-\t\t\t<!-- 1 -->
-\t\t\t\t<div class=\"flex flex-column\">
-\t\t\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
-\t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
-\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing</div>
+\t\t\t";
+        // line 37
+        $context["Blog"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Blog"]);
+        // line 38
+        echo "\t\t\t";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["Blog"] ?? null));
+        $context['loop'] = [
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        ];
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof \Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
+        foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+            // line 39
+            echo "\t\t\t";
+            if ((twig_get_attribute($this->env, $this->source, $context["item"], "selected", [], "any", false, false, false, 39) && (twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 39) < 4))) {
+                // line 40
+                echo "\t\t\t\t<div class=\"flex flex-column\">
+\t\t\t\t\t<img class=\"image margin-bottom-22\" style=\"background-image: url('img/";
+                // line 41
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Photo", [], "any", false, false, false, 41), "html", null, true);
+                echo "')\">
+\t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">";
+                // line 42
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 42), "html", null, true);
+                echo "</div>
+\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22\">";
+                // line 43
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 43), "html", null, true);
+                echo "</div>
 \t\t\t\t\t<div class=\"flex al-it-center\">
 \t\t\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
-\t\t\t\t\t\t<div class=\"font-16 color-black line-height-19 margin-right-19\">Read more</div>
-\t\t\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t\t\t\t<a href=\"post/";
+                // line 46
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 46), "html", null, true);
+                echo "\" class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</a>
+\t\t\t\t\t\t<a href=\"post/";
+                // line 47
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 47), "html", null, true);
+                echo "\">
+\t\t\t\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t\t\t\t</a>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t<!-- 2 -->
-\t\t\t\t<div class=\"flex flex-column\">
-\t\t\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
-\t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
-\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing</div>
-\t\t\t\t\t<div class=\"flex al-it-center\">
-\t\t\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
-\t\t\t\t\t\t<div class=\"font-16 color-black line-height-19 margin-right-19\">Read more</div>
-\t\t\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t<!-- 3 -->
-\t\t\t\t<div class=\"flex flex-column\">
-\t\t\t\t\t<img class=\"image margin-bottom-22\" src=\"./assets/images/test.jpg\">
-\t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">Lorem Ipsum is simply dummy text of the printing</div>
-\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 font-300 color-black line-height-22 margin-bottom-22\">Lorem Ipsum is simply dummy text of the printing</div>
-\t\t\t\t\t<div class=\"flex al-it-center\">
-\t\t\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
-\t\t\t\t\t\t<div class=\"font-16  color-black line-height-19 margin-right-19\">Read more</div>
-\t\t\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
+\t\t\t\t";
+            }
+            // line 53
+            echo "\t\t\t\t";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 54
+        echo "\t\t\t</div>
 \t\t</div>
 \t</div>\t
 </div>
@@ -131,8 +174,10 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 \t\t</div>
 \t\t<div class=\"flex al-it-center\">
 \t\t\t<div class=\"line-black margin-left-64\"></div>
-\t\t\t<div class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Education and Qualifications</div>
-\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t<a href=\"about_us\" class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</a>
+\t\t\t<a href=\"about_us\">
+\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t</a>
 \t\t</div>
 \t</div>
 \t<div class=\"home-about-image width-50per\"></div>
@@ -158,7 +203,7 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 
     public function getDebugInfo()
     {
-        return array (  50 => 3,  46 => 2,  35 => 1,);
+        return array (  156 => 54,  142 => 53,  133 => 47,  129 => 46,  123 => 43,  119 => 42,  115 => 41,  112 => 40,  109 => 39,  91 => 38,  89 => 37,  79 => 29,  77 => 28,  50 => 3,  46 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
