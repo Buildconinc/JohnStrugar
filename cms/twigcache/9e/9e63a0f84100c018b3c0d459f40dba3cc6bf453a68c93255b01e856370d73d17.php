@@ -80,10 +80,10 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 <!-- blog posts -->
 <div class=\"background-color-grey flex\">
 \t<div class=\"flex margin-top-97 width-100per\">
-\t\t<div class=\"line-black margin-left-64 margin-top-19\"></div>
-\t\t<div class=\"flex flex-column width-80per\">
-\t\t\t<div class=\"font-32 color-black line-height-38 margin-left-40 margin-bottom-81\">General Health Advice</div>
-\t\t\t<div class=\"flex ju-co-between flex-wrap margin-left-40 margin-bottom-97 width-100per\">
+\t\t<div class=\"line-black margin-left-64 margin-top-19 display-none-960\"></div>
+\t\t<div class=\"flex flex-column\">
+\t\t\t<div class=\"font-32 color-black line-height-38 margin-left-40 margin-right-40 margin-bottom-81\">General Health Advice</div>
+\t\t\t<div class=\"flex flex-wrap margin-left-40\">
 \t\t\t";
         // line 37
         $context["Blog"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Blog"]);
@@ -93,16 +93,16 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
         $context['_seq'] = twig_ensure_traversable(($context["Blog"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             // line 39
-            echo "\t\t\t\t<div class=\"flex flex-column\">
+            echo "\t\t\t\t<div class=\"flex flex-column margin-bottom-97 margin-right-40\">
 \t\t\t\t\t<img class=\"image margin-bottom-22\" style=\"background-image: url('img/";
             // line 40
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Photo", [], "any", false, false, false, 40), "html", null, true);
             echo "')\">
-\t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">";
+\t\t\t\t\t<div class=\"width-24vw font-24 font-bold color-black line-height-28 margin-bottom-14\">";
             // line 41
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 41), "html", null, true);
             echo "</div>
-\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22\">";
+\t\t\t\t\t<div class=\"flex-wrap-3-line width-24vw font-14 color-black line-height-22 margin-bottom-22\">";
             // line 42
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 42), "html", null, true);
             echo "</div>
@@ -132,17 +132,17 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 </div>
 
 <!-- about -->
-<div class=\"flex home-about\">
-\t<div class=\"backgroung-color-white flex flex-column ju-co-center width-50per\">
+<div class=\"flex home-about flex-900-column\">
+\t<div class=\"backgroung-color-white flex flex-column ju-co-center width-50per margin-top-40 margin-bottom-40\">
 \t\t<div class=\"flex\">
-\t\t\t<div class=\"line-black margin-left-64 margin-top-55\"></div>
+\t\t\t<div class=\"line-black margin-left-64 margin-top-55 display-none-960\"></div>
 \t\t\t<div class=\"flex flex-column\">
 \t\t\t\t<div class=\"font-16 font-300 color-black line-height-19 margin-left-40 margin-bottom-11\">About</div>
 \t\t\t\t<div class=\"font-46 color-black line-height-54 margin-bottom-11 margin-left-40\">John G. Strugar, MD</div>
 \t\t\t\t<div class=\"font-36 color-black line-height-42 margin-left-40 margin-bottom-50\">Board-Certified Neurosurgeon</div>
-\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-4 width-462\">Because I am part of the community here, I very much care about the long-term outcomes of my patients. I approach my patients the way you might approach a friend or a relative.”</div>
-\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-6 width-462\">Dr. Strugar’s areas of expertise as a neurosurgeon extend to spine tumors, cervical spine disorders and head and brain trauma. Fellowship-trained in skull base surgery, Dr. Strugar has deep expertise with intracranial injury. He is also extensively experienced in the surgical treatment of the spine, having performed numerous disc arthoplasties (artificial disc surgery) and minimally invasive spine surgeries, as well as combination arthroplasty and fusion surgery to treat complex spine disease.</div>
-\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-66 width-462\">Dr. Strugar has published and presented on a wide range of topics, including brain tumors, spine tumors, acute spinal cord injury and traumatic brain injury. A caring, dedicated and respected neurosurgeon, he is also highly experienced with independent medical evaluations and expert reviews of medical records.</div>
+\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-4 width-462 border-box margin-right-40\">Because I am part of the community here, I very much care about the long-term outcomes of my patients. I approach my patients the way you might approach a friend or a relative.”</div>
+\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-6 width-462 border-box margin-right-40\">Dr. Strugar’s areas of expertise as a neurosurgeon extend to spine tumors, cervical spine disorders and head and brain trauma. Fellowship-trained in skull base surgery, Dr. Strugar has deep expertise with intracranial injury. He is also extensively experienced in the surgical treatment of the spine, having performed numerous disc arthoplasties (artificial disc surgery) and minimally invasive spine surgeries, as well as combination arthroplasty and fusion surgery to treat complex spine disease.</div>
+\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-66 width-462 border-box margin-right-40\">Dr. Strugar has published and presented on a wide range of topics, including brain tumors, spine tumors, acute spinal cord injury and traumatic brain injury. A caring, dedicated and respected neurosurgeon, he is also highly experienced with independent medical evaluations and expert reviews of medical records.</div>
 \t\t\t</div>
 \t\t</div>
 \t\t<div class=\"flex al-it-center\">
@@ -157,7 +157,7 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 </div>
 
 <!-- text -->
-<div class=\"background-color-grey flex al-it-center ju-co-center height-430\">
+<div class=\"background-color-grey flex al-it-center ju-co-center height-430 padding-40\">
 \t<div class=\"font-24 font-300 line-height-36 color-black text-align-center width-854\">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from</div>
 </div>
 

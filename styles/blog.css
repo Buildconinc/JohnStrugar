@@ -3,12 +3,32 @@
   width: 100%;
   background-color: #ffffff;
 }
+@media screen and (max-width: 1024px) {
+  .blog-intro {
+    height: auto;
+  }
+}
 .blog-intro-image {
   height: 100%;
   width: 50%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1024px) {
+  .blog-intro-image {
+    height: 40.375rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .blog-intro-image {
+    height: 80vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .blog-intro-image {
+    width: 100%;
+  }
 }
 .post-text {
   width: 38.375rem;

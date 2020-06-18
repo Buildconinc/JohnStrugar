@@ -62,6 +62,9 @@ p {
 	color: inherit;
 	img {
 		max-width: 43rem;
+		@media screen and (max-width: 768px) {
+			max-width: calc(~'100% - 2rem');
+		}
 	}
 }
 
@@ -106,6 +109,9 @@ button {
 		height: 100%;
 		background-color: @gold;
 		position: relative;
+		@media screen and (max-width: 900px) {
+			width: 100%;
+		}
 		&-decoration-1 {
 			position: absolute;
 			top: -2.313rem;
@@ -131,23 +137,50 @@ button {
 				padding-top: 4.375rem;
 				padding-bottom: 3.938rem;
 			}
+			@media screen and (max-width: 960px) {
+				padding-left: 2.5rem;
+			}
 		}
 	}
 	&-right {
 		width: 50%;
 		height: 100%;
+		@media screen and (max-width: 900px) {
+			width: 100%;
+			height: 50vw;
+		}
 	}
+}
+
+.ham {
+	display: none;
+	min-height: 100vh; 
+	width: 100%; 
+	background-color: @gold;
+	position: fixed;
+	z-index: 99999;
+	// visibility: hidden;
 }
 
 .owl-nav {
 	position: absolute !important;
-	display: flex !important;
+	display: flex;
 	align-items: center !important;
 	justify-content: space-between !important;
 	left: 0;
 	right: 0;
 	margin: auto;
 	width: 25rem;
+	@media screen and (max-width:960px) {
+		width: 21rem;
+	}
+	@media screen and (max-width: 700px) {
+		width: 82px;
+		justify-content: center !important;
+		left: 2.5rem;
+		right: 0;
+		margin: 0;
+	}
 }
 .owl-dots {
 	margin-top: 10px !important;
@@ -160,6 +193,54 @@ button {
 	margin: auto;
 	width: 18.75rem;
 	height: 3.428rem;
+	@media screen and (max-width:900px) {
+		position: relative !important;
+	}
+}
+
+.lines {
+	margin-bottom: 2.5rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	text-align: end; 
+	-webkit-tap-highlight-color: transparent;
+	@media screen and (max-width: 960px) {
+		text-align: start;
+	}
+}
+.owl-theme .lines .line {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.owl-carousel button.owl-next, .owl-carousel button.owl-prev, .owl-carousel button.line {
+	background: 0 0;
+	color: inherit;
+	border: none;
+	padding: 0!important;
+	font: inherit;
+}
+.owl-carousel .line, .owl-carousel .owl-next, .owl-carousel .owl-prev {
+	cursor: pointer;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.owl-theme .lines .line span {
+	width: 2rem;
+	height: 2px;
+	margin: 0.438rem 0.875rem 0.438rem 0;
+	background: rgba(76, 85, 99, 0.2);
+	display: block;
+	-webkit-backface-visibility: visible;
+	transition: opacity 200ms ease;
+	border-radius: 1.875rem;
+
+}
+.owl-theme .lines .line.active span, .owl-theme .lines .line:hover span {
+	background: #A59484;
 }
 
 @import './variables.less';

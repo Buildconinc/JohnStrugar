@@ -14,6 +14,11 @@
     height: 40.375rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .about-picture-1 {
+    height: 80vw;
+  }
+}
 .about-picture-1-play {
   position: absolute;
   top: 0;
@@ -37,6 +42,11 @@
 @media screen and (max-width: 1024px) {
   .about-picture-2 {
     height: 40.375rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .about-picture-2 {
+    height: 80vw;
   }
 }
 .about-logo {

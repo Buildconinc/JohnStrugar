@@ -11,6 +11,11 @@
     height: 40.375rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .treatments-intro {
+    height: 80vw;
+  }
+}
 .treatments-intro-title {
   font-size: 4rem;
   line-height: 4.688rem;
@@ -30,6 +35,13 @@
     max-width: 20.125rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .treatments-intro-title {
+    max-width: 100%;
+    margin-right: 2.4rem;
+    margin-left: 2.5rem;
+  }
+}
 .treatments-intro-text {
   max-width: 32.25rem;
 }
@@ -43,22 +55,60 @@
     max-width: 20.125rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .treatments-intro-text {
+    max-width: 100%;
+    margin-right: 2.4rem;
+    margin-left: 2.5rem;
+    box-sizing: border-box;
+  }
+}
 .treatments-tretment {
-  width: 33.33%;
+  width: 24vw;
+  min-width: 17.725rem;
 }
 .treatments-tretment-image {
   width: 100%;
-  height: 27vw;
+  height: 19.625rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 560px) {
+  .treatments-tretment-image {
+    height: 17.725rem;
+  }
+}
 .treatments-tretment-text {
   max-width: 22.5vw;
+}
+@media screen and (max-width: 960px) {
+  .treatments-tretment-text {
+    max-width: 100%;
+    margin-right: 2.5rem;
+    box-sizing: border-box;
+  }
 }
 .testimonial {
   width: 50%;
   height: 33vw;
+}
+@media screen and (max-width: 1280px) {
+  .testimonial {
+    height: 40vw;
+  }
+}
+@media screen and (max-width: 960px) {
+  .testimonial {
+    height: 31rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .testimonial {
+    width: 100%;
+    height: auto;
+    background-color: #F4F4F4;
+  }
 }
 .testimonial-logo {
   max-width: 16vw;

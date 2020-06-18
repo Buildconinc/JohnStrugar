@@ -60,6 +60,11 @@ p {
 p img {
   max-width: 43rem;
 }
+@media screen and (max-width: 768px) {
+  p img {
+    max-width: calc(100% - 2rem);
+  }
+}
 button:hover {
   background-color: transparent !important;
   opacity: 0.8;
@@ -102,6 +107,11 @@ button:focus {
   background-color: #A59484;
   position: relative;
 }
+@media screen and (max-width: 900px) {
+  .footer-left {
+    width: 100%;
+  }
+}
 .footer-left-decoration-1 {
   position: absolute;
   top: -2.313rem;
@@ -130,19 +140,52 @@ button:focus {
     padding-bottom: 3.938rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .footer-left-block {
+    padding-left: 2.5rem;
+  }
+}
 .footer-right {
   width: 50%;
   height: 100%;
 }
+@media screen and (max-width: 900px) {
+  .footer-right {
+    width: 100%;
+    height: 50vw;
+  }
+}
+.ham {
+  display: none;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #A59484;
+  position: fixed;
+  z-index: 99999;
+}
 .owl-nav {
   position: absolute !important;
-  display: flex !important;
+  display: flex;
   align-items: center !important;
   justify-content: space-between !important;
   left: 0;
   right: 0;
   margin: auto;
   width: 25rem;
+}
+@media screen and (max-width: 960px) {
+  .owl-nav {
+    width: 21rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .owl-nav {
+    width: 82px;
+    justify-content: center !important;
+    left: 2.5rem;
+    right: 0;
+    margin: 0;
+  }
 }
 .owl-dots {
   margin-top: 10px !important;
@@ -155,6 +198,61 @@ button:focus {
   margin: auto;
   width: 18.75rem;
   height: 3.428rem;
+}
+@media screen and (max-width: 900px) {
+  .owl-dots {
+    position: relative !important;
+  }
+}
+.lines {
+  margin-bottom: 2.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  text-align: end;
+  -webkit-tap-highlight-color: transparent;
+}
+@media screen and (max-width: 960px) {
+  .lines {
+    text-align: start;
+  }
+}
+.owl-theme .lines .line {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.owl-carousel button.owl-next,
+.owl-carousel button.owl-prev,
+.owl-carousel button.line {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+}
+.owl-carousel .line,
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-theme .lines .line span {
+  width: 2rem;
+  height: 2px;
+  margin: 0.438rem 0.875rem 0.438rem 0;
+  background: rgba(76, 85, 99, 0.2);
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 1.875rem;
+}
+.owl-theme .lines .line.active span,
+.owl-theme .lines .line:hover span {
+  background: #A59484;
 }
 .margin-top-97 {
   margin-top: 6.063rem;
@@ -169,6 +267,9 @@ button:focus {
 }
 .margin-top-45 {
   margin-top: 2.813rem;
+}
+.margin-top-40 {
+  margin-top: 2.5rem;
 }
 .margin-top-19 {
   margin-top: 1.188rem;
@@ -199,6 +300,9 @@ button:focus {
   .margin-bottom-50 {
     margin-bottom: 2.125rem;
   }
+}
+.margin-bottom-40 {
+  margin-bottom: 2.5rem;
 }
 .margin-bottom-38 {
   margin-bottom: 2.375rem;
@@ -238,6 +342,11 @@ button:focus {
     margin-left: 4.125rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .margin-left-114 {
+    margin-left: 2.5rem;
+  }
+}
 .margin-left-64 {
   margin-left: 4rem;
 }
@@ -255,8 +364,18 @@ button:focus {
 .margin-right-120 {
   margin-right: 7.5rem;
 }
+@media screen and (max-width: 1024px) {
+  .margin-right-120 {
+    margin-right: 4.5rem;
+  }
+}
 .margin-right-100 {
   margin-right: 6.25rem;
+}
+@media screen and (max-width: 1024px) {
+  .margin-right-100 {
+    margin-right: 2.25rem;
+  }
 }
 .margin-right-95 {
   margin-right: 5.938rem;
@@ -264,8 +383,16 @@ button:focus {
 .margin-right-60 {
   margin-right: 3.75rem;
 }
+@media screen and (max-width: 1024px) {
+  .margin-right-60 {
+    margin-right: 2rem;
+  }
+}
 .margin-right-55 {
   margin-right: 3.438rem;
+}
+.margin-right-40 {
+  margin-right: 2.5rem;
 }
 .margin-right-19 {
   margin-right: 1.188rem;
@@ -275,6 +402,14 @@ button:focus {
 }
 .padding-75 {
   padding: 4.688rem;
+}
+@media screen and (max-width: 768px) {
+  .padding-75 {
+    padding: 2.5rem;
+  }
+}
+.padding-40 {
+  padding: 2.5rem;
 }
 .padding-top-160 {
   padding-top: 10rem;
@@ -297,7 +432,7 @@ button:focus {
 }
 @media screen and (max-width: 1024px) {
   .padding-bottom-160 {
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
   }
 }
 .padding-bottom-90 {
@@ -314,6 +449,11 @@ button:focus {
 .padding-left-114 {
   padding-left: 7.125rem;
 }
+@media screen and (max-width: 960px) {
+  .padding-left-114 {
+    padding-left: 2.5rem;
+  }
+}
 .padding-right-202 {
   padding-right: 12.625rem;
 }
@@ -328,6 +468,11 @@ button:focus {
     max-width: 40.375rem;
   }
 }
+@media screen and (max-width: 900px) {
+  .width-854 {
+    max-width: 100%;
+  }
+}
 .width-710 {
   max-width: 44.375rem;
 }
@@ -339,6 +484,16 @@ button:focus {
 @media screen and (max-width: 1024px) {
   .width-710 {
     max-width: 25.375rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .width-710 {
+    max-width: 22.375rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .width-710 {
+    max-width: 100%;
   }
 }
 .width-550 {
@@ -360,14 +515,35 @@ button:focus {
     max-width: 24.875rem;
   }
 }
+@media screen and (max-width: 900px) {
+  .width-462 {
+    max-width: 100%;
+  }
+}
 .width-439 {
   max-width: 27.438rem;
 }
-.width-20vw {
-  max-width: 20vw;
+@media screen and (max-width: 960px) {
+  .width-439 {
+    max-width: 21.438rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .width-439 {
+    max-width: 100%;
+  }
+}
+.width-24vw {
+  width: 24vw;
+  min-width: 17.725rem;
 }
 .width-50per {
   width: 50%;
+}
+@media screen and (max-width: 900px) {
+  .width-50per {
+    width: 100%;
+  }
 }
 .width-80per {
   width: 80%;
@@ -381,6 +557,28 @@ button:focus {
 @media screen and (max-width: 1024px) {
   .height-430 {
     height: 15.875rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .margin-960-left-none {
+    margin-left: 0;
+  }
+  .margin-960-right-none {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .margin-900-bottom-40 {
+    margin-bottom: 2.5rem;
+  }
+  .margin-900-left-40 {
+    margin-left: 2.5rem;
+  }
+  .margin-900-right-40 {
+    margin-right: 2.5rem;
+  }
+  .margin-900-right-none {
+    margin-right: 0;
   }
 }
 .flex {
@@ -426,9 +624,52 @@ button:focus {
 .al-it-end {
   align-items: flex-end;
 }
+.display-none {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   .display-none-1024 {
     display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .display-none-960 {
+    display: none;
+  }
+  .flex-960 {
+    display: flex;
+  }
+  .flex-960-row {
+    flex-direction: row;
+  }
+  .flex-960-column {
+    flex-direction: column;
+  }
+  .flex-960-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 900px) {
+  .display-none-900 {
+    display: none;
+  }
+  .flex-900 {
+    display: flex;
+  }
+  .flex-900-row {
+    flex-direction: row;
+  }
+  .flex-900-column {
+    flex-direction: column;
+  }
+  .flex-900-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .al-it-900-center {
+    align-items: center;
+  }
+  .ju-co-900-center {
+    justify-content: center;
   }
 }
 .font-gotham {
@@ -581,6 +822,9 @@ button:focus {
 .background-color-white {
   background-color: #ffffff;
 }
+.background-color-gold {
+  background-color: #A59484;
+}
 .background-color-blue {
   background-color: #003E7E;
 }
@@ -606,6 +850,11 @@ button:focus {
     height: 34.375rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .home-intro {
+    height: 80vw;
+  }
+}
 .home-intro-play {
   position: absolute;
   top: 0;
@@ -625,12 +874,22 @@ button:focus {
     height: 45.375rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .home-about {
+    height: auto;
+  }
+}
 .home-about-image {
   height: 100%;
   background-image: url(../assets/images/home_about.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 960px) {
+  .home-about-image {
+    height: 80vw;
+  }
 }
 .line-white {
   width: 6.125rem;
@@ -676,11 +935,16 @@ button:focus {
 }
 .image {
   width: 24vw;
-  min-width: 18.325rem;
+  min-width: 17.725rem;
   height: 19.625rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 560px) {
+  .image {
+    height: 17.725rem;
+  }
 }
 .about-picture-1 {
   height: calc(95vh - 2.75rem);
@@ -696,6 +960,11 @@ button:focus {
 @media screen and (max-width: 1024px) {
   .about-picture-1 {
     height: 40.375rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .about-picture-1 {
+    height: 80vw;
   }
 }
 .about-picture-1-play {
@@ -723,6 +992,11 @@ button:focus {
     height: 40.375rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .about-picture-2 {
+    height: 80vw;
+  }
+}
 .about-logo {
   height: 40.625rem;
   width: 100%;
@@ -738,12 +1012,32 @@ button:focus {
   width: 100%;
   background-color: #ffffff;
 }
+@media screen and (max-width: 1024px) {
+  .blog-intro {
+    height: auto;
+  }
+}
 .blog-intro-image {
   height: 100%;
   width: 50%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1024px) {
+  .blog-intro-image {
+    height: 40.375rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .blog-intro-image {
+    height: 80vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .blog-intro-image {
+    width: 100%;
+  }
 }
 .post-text {
   width: 38.375rem;
@@ -759,6 +1053,11 @@ button:focus {
 @media screen and (max-width: 1024px) {
   .treatments-intro {
     height: 40.375rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .treatments-intro {
+    height: 80vw;
   }
 }
 .treatments-intro-title {
@@ -780,6 +1079,13 @@ button:focus {
     max-width: 20.125rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .treatments-intro-title {
+    max-width: 100%;
+    margin-right: 2.4rem;
+    margin-left: 2.5rem;
+  }
+}
 .treatments-intro-text {
   max-width: 32.25rem;
 }
@@ -793,22 +1099,60 @@ button:focus {
     max-width: 20.125rem;
   }
 }
+@media screen and (max-width: 960px) {
+  .treatments-intro-text {
+    max-width: 100%;
+    margin-right: 2.4rem;
+    margin-left: 2.5rem;
+    box-sizing: border-box;
+  }
+}
 .treatments-tretment {
-  width: 33.33%;
+  width: 24vw;
+  min-width: 17.725rem;
 }
 .treatments-tretment-image {
   width: 100%;
-  height: 27vw;
+  height: 19.625rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 560px) {
+  .treatments-tretment-image {
+    height: 17.725rem;
+  }
+}
 .treatments-tretment-text {
   max-width: 22.5vw;
+}
+@media screen and (max-width: 960px) {
+  .treatments-tretment-text {
+    max-width: 100%;
+    margin-right: 2.5rem;
+    box-sizing: border-box;
+  }
 }
 .testimonial {
   width: 50%;
   height: 33vw;
+}
+@media screen and (max-width: 1280px) {
+  .testimonial {
+    height: 40vw;
+  }
+}
+@media screen and (max-width: 960px) {
+  .testimonial {
+    height: 31rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .testimonial {
+    width: 100%;
+    height: auto;
+    background-color: #F4F4F4;
+  }
 }
 .testimonial-logo {
   max-width: 16vw;

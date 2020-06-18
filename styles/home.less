@@ -12,6 +12,9 @@
 		@media screen and (max-width: 1024px) {
 			height: 34.375rem;
 		}
+		@media screen and (max-width: 960px) {
+			height: 80vw;
+		}
 		&-play {
 			position: absolute;
 			top: 0;
@@ -29,12 +32,18 @@
 		@media screen and (max-width: 1024px) {
 			height: 45.375rem;
 		}
+		@media screen and (max-width: 960px) {
+			height: auto;
+		}
 		&-image {
 			height: 100%;
 			background-image: url(../assets/images/home_about.jpg);
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+			@media screen and (max-width: 960px) {
+				height: 80vw;
+			}
 		}
 	}
 }
@@ -82,9 +91,12 @@
 
 .image {
 	width: 24vw;
-	min-width: 18.325rem;
+	min-width: 17.725rem;
 	height: 19.625rem;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	@media screen and (max-width: 560px) {
+		height: 17.725rem;
+	}
 }

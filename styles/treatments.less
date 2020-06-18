@@ -1,3 +1,5 @@
+@import './variables.less';
+
 .treatments {
 	&-intro {
 		height: calc(~'100vh - 2.75rem');
@@ -8,6 +10,9 @@
 		background-repeat: no-repeat;
 		@media screen and (max-width: 1024px) {
 			height: 40.375rem;
+		}
+		@media screen and (max-width: 960px) {
+			height: 80vw;
 		}
 		&-title {
 			font-size: 4rem;
@@ -23,6 +28,11 @@
 				line-height: 1.938rem;
 				max-width: 20.125rem;
 			}
+			@media screen and (max-width: 960px) {
+				max-width: 100%;
+				margin-right: 2.4rem;
+				margin-left: 2.5rem;
+			}
 		}
 		&-text {
 			max-width: 32.25rem;
@@ -32,19 +42,34 @@
 			@media screen and (max-width: 1024px) {
 				max-width: 20.125rem;
 			}
+			@media screen and (max-width: 960px) {
+				max-width: 100%;
+				margin-right: 2.4rem;
+				margin-left: 2.5rem;
+				box-sizing: border-box;
+			}
 		}
 	}
 	&-tretment {
-		width: 33.33%;
+		width: 24vw;
+    min-width: 17.725rem;
 		&-image {
 			width: 100%;
-			height: 27vw;
+			height: 19.625rem;
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+			@media screen and (max-width: 560px) {
+				height: 17.725rem;
+			}
 		}
 		&-text {
 			max-width: 22.5vw;
+			@media screen and (max-width: 960px) {
+				max-width: 100%;
+				margin-right: 2.5rem;
+				box-sizing: border-box;
+			}
 		}
 	}
 }
@@ -52,6 +77,17 @@
 .testimonial {
 	width: 50%;
 	height: 33vw;
+	@media screen and (max-width: 1280px) {
+		height: 40vw;
+	}
+	@media screen and (max-width: 960px) {
+		height: 31rem;
+	}
+	@media screen and (max-width: 900px) {
+		width: 100%;
+		height: auto;
+		background-color: @grey;
+	}
 	&-logo {
 		max-width: 16vw; 
 		max-height: 13.66vw;

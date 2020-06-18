@@ -4,16 +4,16 @@
 
 <!-- intro -->
 <div class="flex padding-top-160 padding-bottom-160">
-	<div class="line-black margin-left-64 margin-top-45"></div>
+	<div class="line-black margin-left-64 margin-top-45 display-none-960"></div>
 	<div class="flex flex-column">
 		<div class="font-16 line-height-19 color-black margin-left-40 margin-bottom-6">Treatments</div>
 		<div class="font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50">{{treatment.Title}}</div>
-		<div class="flex">
-			<div class="flex flex-column margin-right-120">
+		<div class="flex flex-900-column">
+			<div class="flex flex-column margin-right-120 margin-900-bottom-40 margin-900-right-40">
 				<div class="font-14 color-black font-300 line-height-22 margin-left-40 width-710">{{treatment.Description|raw}}</div>
 			</div>
 			<div class="flex flex-column">
-				<div class="font-14 color-black font-300 line-height-22 width-710">{{treatment.description2|raw}}</div>
+				<div class="font-14 color-black font-300 line-height-22 width-710 margin-900-left-40 margin-900-right-40">{{treatment.description2|raw}}</div>
 			</div>
 		</div>
 	</div>
@@ -31,14 +31,14 @@
 
 <!-- treatments -->
 <div class="font-32 line-height-38 color-black background-color-white padding-left-114 padding-top-90 padding-bottom-90">Treatments</div>
-<div class="flex flex-wrap">
+<div id="owl3" class="owl-carousel owl-theme flex flex-wrap">
 {% set Treatments = fetch("Treatments") %}
 {% for item in Treatments %}
 	<!-- 1 -->
-	<div class="treatments-tretment flex flex-column margin-bottom-81">
+	<div class="flex flex-column margin-bottom-81">
 		<div class="treatments-tretment-image margin-bottom-50" style="background-image: url('img/{{item.image}}')"></div>
 		<div class="treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22">{{item.Title}}</div>
-		<div class="flex-wrap-7-line treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114">{{item.Description}}</div>
+		<div class="flex-wrap-7-line treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114">{{item.short_text}}</div>
 		<div class="flex al-it-center">
 			<div class="line-black margin-left-114"></div>
 			<a href="treatment/{{item.Slug}}" class="font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19">Read more</a>
