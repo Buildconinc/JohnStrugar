@@ -53,22 +53,22 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
         echo "
 <!-- intro -->
 <div class=\"flex padding-top-160 padding-bottom-160\">
-\t<div class=\"line-black margin-left-64 margin-top-45\"></div>
+\t<div class=\"line-black margin-left-64 margin-top-45 display-none-960\"></div>
 \t<div class=\"flex flex-column\">
 \t\t<div class=\"font-16 line-height-19 color-black margin-left-40 margin-bottom-6\">Treatments</div>
 \t\t<div class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">";
         // line 10
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Title", [], "any", false, false, false, 10), "html", null, true);
         echo "</div>
-\t\t<div class=\"flex\">
-\t\t\t<div class=\"flex flex-column margin-right-120\">
+\t\t<div class=\"flex flex-900-column\">
+\t\t\t<div class=\"flex flex-column margin-right-120 margin-900-bottom-40 margin-900-right-40\">
 \t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 width-710\">";
         // line 13
         echo twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Description", [], "any", false, false, false, 13);
         echo "</div>
 \t\t\t</div>
 \t\t\t<div class=\"flex flex-column\">
-\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 width-710\">";
+\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 width-710 margin-900-left-40 margin-900-right-40\">";
         // line 16
         echo twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "description2", [], "any", false, false, false, 16);
         echo "</div>
@@ -99,7 +99,7 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
         echo "
 <!-- treatments -->
 <div class=\"font-32 line-height-38 color-black background-color-white padding-left-114 padding-top-90 padding-bottom-90\">Treatments</div>
-<div class=\"flex flex-wrap\">
+<div id=\"owl3\" class=\"owl-carousel owl-theme flex flex-wrap\">
 ";
         // line 35
         $context["Treatments"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Treatments"]);
@@ -109,7 +109,7 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             // line 37
             echo "\t<!-- 1 -->
-\t<div class=\"treatments-tretment flex flex-column margin-bottom-81\">
+\t<div class=\"flex flex-column margin-bottom-81\">
 \t\t<div class=\"treatments-tretment-image margin-bottom-50\" style=\"background-image: url('img/";
             // line 39
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 39), "html", null, true);
@@ -120,7 +120,7 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
             echo "</div>
 \t\t<div class=\"flex-wrap-7-line treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114\">";
             // line 41
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Description", [], "any", false, false, false, 41), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 41), "html", null, true);
             echo "</div>
 \t\t<div class=\"flex al-it-center\">
 \t\t\t<div class=\"line-black margin-left-114\"></div>

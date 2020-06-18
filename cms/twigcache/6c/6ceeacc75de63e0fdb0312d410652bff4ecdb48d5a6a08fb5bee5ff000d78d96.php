@@ -75,16 +75,16 @@ class __TwigTemplate_756e408ceb652f037ad6ec5f0c33540c5a49e6e4ec78e1c90431569a62f
             // line 8
             if ((twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 8) < 2)) {
                 // line 9
-                echo "<div class=\"blog-intro flex\">
-\t<div class=\"flex flex-column ju-co-center width-50per\">
+                echo "<div class=\"blog-intro flex flex-900-column\">
+\t<div class=\"flex flex-column ju-co-center width-50per margin-top-40 margin-bottom-40\">
 \t\t<div class=\"flex\">
-\t\t\t<div class=\"line-black margin-left-64 margin-top-19\"></div>
+\t\t\t<div class=\"line-black margin-left-64 margin-top-19 display-none-960\"></div>
 \t\t\t<div class=\"flex flex-column\">
 \t\t\t\t<div class=\"font-46 color-black line-height-54 margin-bottom-11 margin-left-40 width-462\">";
                 // line 14
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 14), "html", null, true);
                 echo "</div>
-\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-66 width-462\">";
+\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-66 width-462 margin-900-right-40 border-box\">";
                 // line 15
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 15), "html", null, true);
                 echo "</div>
@@ -128,9 +128,9 @@ class __TwigTemplate_756e408ceb652f037ad6ec5f0c33540c5a49e6e4ec78e1c90431569a62f
 <!-- blog posts -->
 <div class=\"background-color-grey flex\">
 \t<div class=\"flex margin-top-97 width-100per\">
-\t\t<div class=\"line-transparent margin-left-64 margin-top-19\"></div>
-\t\t<div class=\"flex flex-column width-80per\">
-\t\t\t<div class=\"flex flex-wrap ju-co-between margin-left-40 width-100per\">
+\t\t<div class=\"line-transparent margin-left-64 margin-top-19 display-none-960\"></div>
+\t\t<div class=\"flex flex-column al-it-900-center\">
+\t\t\t<div class=\"flex flex-wrap margin-left-40 ju-co-900-center\">
 \t\t\t
 \t\t\t";
         // line 38
@@ -154,21 +154,21 @@ class __TwigTemplate_756e408ceb652f037ad6ec5f0c33540c5a49e6e4ec78e1c90431569a62f
             echo "\t\t\t";
             if ((twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 39) > 1)) {
                 // line 40
-                echo "\t\t\t\t<div class=\"flex flex-column margin-bottom-81\">
+                echo "\t\t\t\t<div class=\"flex flex-column margin-bottom-97 margin-right-40\">
 \t\t\t\t\t<img class=\"image margin-bottom-22\" style=\"background-image: url('img/";
                 // line 41
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Photo", [], "any", false, false, false, 41), "html", null, true);
                 echo "')\">
-\t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">";
+\t\t\t\t\t<div class=\"width-24vw font-24 font-bold color-black line-height-28 margin-bottom-14\">";
                 // line 42
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 42), "html", null, true);
                 echo "</div>
-\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22\">";
+\t\t\t\t\t<div class=\"flex-wrap-3-line width-24vw font-14 color-black line-height-22 margin-bottom-22\">";
                 // line 43
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 43), "html", null, true);
                 echo "</div>
 \t\t\t\t\t<div class=\"flex al-it-center\">
-\t\t\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
+\t\t\t\t\t\t<div class=\"line-small-black\"></div>
 \t\t\t\t\t\t<a href=\"post/";
                 // line 46
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 46), "html", null, true);
@@ -198,9 +198,6 @@ class __TwigTemplate_756e408ceb652f037ad6ec5f0c33540c5a49e6e4ec78e1c90431569a62f
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 54
-        echo "\t\t\t<!-- 2 -->
-\t\t\t\t";
-        // line 87
         echo "\t\t\t</div>
 \t\t</div>
 \t</div>\t
@@ -222,7 +219,7 @@ class __TwigTemplate_756e408ceb652f037ad6ec5f0c33540c5a49e6e4ec78e1c90431569a62f
 
     public function getDebugInfo()
     {
-        return array (  204 => 87,  201 => 54,  187 => 53,  178 => 47,  174 => 46,  168 => 43,  164 => 42,  160 => 41,  157 => 40,  154 => 39,  137 => 38,  127 => 30,  109 => 26,  101 => 21,  97 => 20,  89 => 15,  85 => 14,  78 => 9,  76 => 8,  59 => 7,  55 => 5,  53 => 4,  50 => 3,  46 => 2,  35 => 1,);
+        return array (  201 => 54,  187 => 53,  178 => 47,  174 => 46,  168 => 43,  164 => 42,  160 => 41,  157 => 40,  154 => 39,  137 => 38,  127 => 30,  109 => 26,  101 => 21,  97 => 20,  89 => 15,  85 => 14,  78 => 9,  76 => 8,  59 => 7,  55 => 5,  53 => 4,  50 => 3,  46 => 2,  35 => 1,);
     }
 
     public function getSourceContext()

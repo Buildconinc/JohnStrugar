@@ -3,13 +3,24 @@
 		height: 80vh;
 		width: 100%;
 		background-color: #ffffff;
+		@media screen and (max-width: 1024px) {
+			height: auto;
+		}
 		&-image {
 			height: 100%;
 			width: 50%;
-			// background-image: url(../assets/images/blog_intro.jpg);
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+			@media screen and (max-width: 1024px) {
+				height: 40.375rem;
+			}
+			@media screen and (max-width: 960px) {
+				height: 80vw;
+			}
+			@media screen and (max-width: 900px) {
+				width: 100%;
+			}
 		}
 	}
 }

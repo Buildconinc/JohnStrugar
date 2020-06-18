@@ -36,7 +36,7 @@ class __TwigTemplate_278988ece3b0af944319c041bce3f47485bb42132faa0e31f2234fa771c
         // line 1
         echo "<div class=\"background-color-grey padding-75 border-box flex\">
 <!-- left -->
-\t<div class=\"testimonial background-color-grey-dark flex al-it-center ju-co-center\">
+\t<div class=\"testimonial background-color-grey-dark flex al-it-center ju-co-center display-none-900\">
 \t\t<img class=\"testimonial-logo\" src=\"./assets/images/JohnStrugar.png\">
 \t</div>
 \t<!-- right -->
@@ -51,8 +51,8 @@ class __TwigTemplate_278988ece3b0af944319c041bce3f47485bb42132faa0e31f2234fa771c
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["Testimonial"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 12
-            echo "\t\t\t<div style=\"width: 100%\" class=\"flex flex-column al-it-center ju-co-center\">
+            echo " 
+\t\t\t<div style=\"width: 100%\" class=\"flex flex-column al-it-center ju-co-center\">
 \t\t\t\t<div class=\"font-22 line-height-26 text-align-center color-black margin-bottom-9\">";
             // line 13
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Name", [], "any", false, false, false, 13), "html", null, true);
@@ -89,7 +89,7 @@ class __TwigTemplate_278988ece3b0af944319c041bce3f47485bb42132faa0e31f2234fa771c
 
     public function getDebugInfo()
     {
-        return array (  75 => 18,  66 => 15,  62 => 14,  58 => 13,  55 => 12,  50 => 11,  48 => 10,  37 => 1,);
+        return array (  75 => 18,  66 => 15,  62 => 14,  58 => 13,  50 => 11,  48 => 10,  37 => 1,);
     }
 
     public function getSourceContext()

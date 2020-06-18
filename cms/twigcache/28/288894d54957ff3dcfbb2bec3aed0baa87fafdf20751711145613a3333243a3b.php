@@ -64,7 +64,7 @@ class __TwigTemplate_ab1c89aae8fc3bf4a78957763676fa746a247c5b5b2bcb9e6b8b231149b
 </div>
 
 <!-- body -->
-<div class=\"flex ju-co-center margin-bottom-81\">
+<div class=\"flex ju-co-center margin-bottom-81 margin-left-40 margin-right-40\">
 \t<div id=\"html\" class=\"post-text font-14 color-black line-height-22\">";
         // line 13
         echo twig_get_attribute($this->env, $this->source, ($context["Post"] ?? null), "body", [], "any", false, false, false, 13);
@@ -74,28 +74,36 @@ class __TwigTemplate_ab1c89aae8fc3bf4a78957763676fa746a247c5b5b2bcb9e6b8b231149b
 <!-- share -->
 <div class=\"flex ju-co-center margin-bottom-97\">
 \t<div class=\"margin-left-16 margin-right-16\">
-\t\t";
-        // line 20
-        echo "\t\t\t<img src=\"./assets/images/icons/twitter.png\">
-\t\t";
-        // line 22
-        echo "\t</div>
+\t\t<a href=\"https://twitter.com/share?url=";
+        // line 19
+        echo twig_escape_filter($this->env, twig_urlencode_filter(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Slug", [], "any", false, false, false, 19)), "html", null, true);
+        echo "&amp;url=";
+        echo twig_escape_filter($this->env, twig_urlencode_filter(($context["_BASE"] ?? null)), "html", null, true);
+        echo "prost%2F";
+        echo twig_escape_filter($this->env, twig_urlencode_filter(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Slug", [], "any", false, false, false, 19)), "html", null, true);
+        echo "\" target=\"_blank\">
+\t\t\t<img src=\"./assets/images/icons/twitter.png\">
+\t\t</a>
+\t</div>
 \t<div class=\"margin-left-16 margin-right-16\">
-\t\t";
-        // line 25
-        echo "\t\t\t<img src=\"./assets/images/icons/fb.png\">
-\t\t";
-        // line 27
-        echo "\t</div>
+\t\t<a href=\"http://www.facebook.com/sharer/sharer.php?u=";
+        // line 24
+        echo twig_escape_filter($this->env, twig_urlencode_filter(($context["_BASE"] ?? null)), "html", null, true);
+        echo "prost%2F";
+        echo twig_escape_filter($this->env, twig_urlencode_filter(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Slug", [], "any", false, false, false, 24)), "html", null, true);
+        echo "\" target=\"_blank\">
+\t\t\t<img src=\"./assets/images/icons/fb.png\">
+\t\t</a>
+\t</div>
 </div>
 
 <!-- blog posts -->
 <div class=\"background-color-grey flex\">
 \t<div class=\"flex margin-top-97 width-100per\">
-\t\t<div class=\"line-black margin-left-64 margin-top-19\"></div>
-\t\t<div class=\"flex flex-column width-80per\">
-\t\t\t<div class=\"font-32 color-black line-height-38 margin-left-40 margin-bottom-81\">General Health Advice</div>
-\t\t\t<div class=\"flex ju-co-between margin-left-40 margin-bottom-97 width-100per\">
+\t\t<div class=\"line-black margin-left-64 margin-top-19 display-none-960\"></div>
+\t\t<div class=\"flex flex-column\">
+\t\t\t<div class=\"font-32 color-black line-height-38 margin-left-40 margin-right-40 margin-bottom-81\">General Health Advice</div>
+\t\t\t<div class=\"flex flex-wrap margin-left-40\">
 \t\t\t";
         // line 37
         $context["Blog"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Blog"]);
@@ -103,55 +111,36 @@ class __TwigTemplate_ab1c89aae8fc3bf4a78957763676fa746a247c5b5b2bcb9e6b8b231149b
         echo "\t\t\t";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["Blog"] ?? null));
-        $context['loop'] = [
-          'parent' => $context['_parent'],
-          'index0' => 0,
-          'index'  => 1,
-          'first'  => true,
-        ];
-        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof \Countable)) {
-            $length = count($context['_seq']);
-            $context['loop']['revindex0'] = $length - 1;
-            $context['loop']['revindex'] = $length;
-            $context['loop']['length'] = $length;
-            $context['loop']['last'] = 1 === $length;
-        }
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             // line 39
-            echo "\t\t\t";
-            if ((twig_get_attribute($this->env, $this->source, $context["item"], "selected", [], "any", false, false, false, 39) && (twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 39) < 4))) {
-                // line 40
-                echo "\t\t\t\t<div class=\"flex flex-column\">
+            echo "\t\t\t\t<div class=\"flex flex-column margin-bottom-97 margin-right-40\">
 \t\t\t\t\t<img class=\"image margin-bottom-22\" style=\"background-image: url('img/";
-                // line 41
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Photo", [], "any", false, false, false, 41), "html", null, true);
-                echo "')\">
-\t\t\t\t\t<div class=\"width-20vw font-24 font-bold color-black line-height-28 margin-bottom-14\">";
-                // line 42
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 42), "html", null, true);
-                echo "</div>
-\t\t\t\t\t<div class=\"flex-wrap-3-line width-20vw font-14 color-black line-height-22 margin-bottom-22\">";
-                // line 43
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 43), "html", null, true);
-                echo "</div>
+            // line 40
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Photo", [], "any", false, false, false, 40), "html", null, true);
+            echo "')\">
+\t\t\t\t\t<div class=\"width-24vw font-24 font-bold color-black line-height-28 margin-bottom-14\">";
+            // line 41
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 41), "html", null, true);
+            echo "</div>
+\t\t\t\t\t<div class=\"flex-wrap-3-line width-24vw font-14 color-black line-height-22 margin-bottom-22\">";
+            // line 42
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 42), "html", null, true);
+            echo "</div>
 \t\t\t\t\t<div class=\"flex al-it-center\">
-\t\t\t\t\t\t<div class=\"line-small-black margin-right-16\"></div>
-\t\t\t\t\t\t<div class=\"font-16 color-black line-height-19 margin-right-19\">Read more</div>
-\t\t\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t\t\t\t<div class=\"line-small-black\"></div>
+\t\t\t\t\t\t<a href=\"post/";
+            // line 45
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 45), "html", null, true);
+            echo "\" class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</a>
+\t\t\t\t\t\t<a href=\"post/";
+            // line 46
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 46), "html", null, true);
+            echo "\">
+\t\t\t\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
+\t\t\t\t\t\t</a>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t\t";
-            }
-            // line 51
-            echo "\t\t\t\t";
-            ++$context['loop']['index0'];
-            ++$context['loop']['index'];
-            $context['loop']['first'] = false;
-            if (isset($context['loop']['length'])) {
-                --$context['loop']['revindex0'];
-                --$context['loop']['revindex'];
-                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
-            }
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
@@ -184,7 +173,7 @@ class __TwigTemplate_ab1c89aae8fc3bf4a78957763676fa746a247c5b5b2bcb9e6b8b231149b
 
     public function getDebugInfo()
     {
-        return array (  160 => 52,  146 => 51,  135 => 43,  131 => 42,  127 => 41,  124 => 40,  121 => 39,  103 => 38,  101 => 37,  89 => 27,  86 => 25,  82 => 22,  79 => 20,  70 => 13,  62 => 8,  58 => 7,  53 => 4,  49 => 3,  44 => 1,  42 => 2,  35 => 1,);
+        return array (  149 => 52,  137 => 46,  133 => 45,  127 => 42,  123 => 41,  119 => 40,  116 => 39,  111 => 38,  109 => 37,  91 => 24,  79 => 19,  70 => 13,  62 => 8,  58 => 7,  53 => 4,  49 => 3,  44 => 1,  42 => 2,  35 => 1,);
     }
 
     public function getSourceContext()

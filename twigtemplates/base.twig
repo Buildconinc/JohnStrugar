@@ -15,27 +15,47 @@
 <body >
 
 <div class="header">
-	<div class="header-left">
+	<div class="header-left display-none-960">
 		<a href="#">
 			<img class="margin-right-100" src="./assets/images/full-logo.png">
 		</a>
 		<a href="about_us" class="font-14 color-white font-gotham margin-right-60">About</a>
 		<a href="treatments" class="font-14 color-white font-gotham margin-right-60">Treatments</a>
-		<a href="blog" class="font-14 color-white font-gotham">Blog</a>
+		<a href="blog" class="font-14 color-white font-gotham margin-right-60">Blog</a>
 	</div>
-	<div class="header-right">
-		<p class="font-14 color-white font-gotham margin-right-16">Address</p>
-		<p class="font-14 color-white font-gotham margin-right-55">500 Chase Parkway Waterbury, CT 06708</p>
-		<p class="font-14 color-white font-gotham margin-right-16">Phone</p>
-		<p class="font-14 color-white font-gotham margin-right-55">+1 (0) 44 832 58 58</p>
-		<a class="font-14 color-white font-gotham">Contact</a>
+	<div class="header-right display-none-960">
+		<p class="font-14 color-white font-gotham margin-right-16 display-none-1024">Address</p>
+		<p class="font-14 color-white font-gotham margin-right-55 display-none-1024">500 Chase Parkway Waterbury, CT 06708</p>
+		<p class="font-14 color-white font-gotham margin-right-16 display-none-1024">Phone</p>
+		<p class="font-14 color-white font-gotham margin-right-55 display-none-1024">+1 (0) 44 832 58 58</p>
+		<a href="#contact" class="font-14 color-white font-gotham">Contact</a>
 	</div>
+	<div style="margin-left: 2rem;" class="display-none flex-960">
+		<a href="#" onclick="OpenClose('false')">
+			<img src="./assets/images/icons/logo.png">
+		</a>
+	</div>
+	<div onclick="OpenClose()" style="margin-right: 2rem;" class="display-none flex-960">
+		<img id="open" class="flex" src="./assets/images/icons/meni.png">
+		<img id="close" class="display-none" src="./assets/images/icons/close.png">
+	</div>
+</div>
+<div class="ham flex-column al-it-center">
+	<a href="#" onclick="OpenClose('false')" class="font-16 line-height-19 color-white margin-bottom-50 margin-top-97">Home</a>
+	<a href="about_us" class="font-16 line-height-19 color-white margin-bottom-50">About</a>
+	<a href="treatments" class="font-16 line-height-19 color-white margin-bottom-50">Treatments</a>
+	<a href="blog" class="font-16 line-height-19 color-white margin-bottom-81">Blog</a>
+	<a class="font-14 line-height-17 font-300 color-white margin-bottom-16">Address</a>
+	<a class="font-14 line-height-17 color-white margin-bottom-50">500 Chase Parkway Waterbury, CT 06708</a>
+	<a class="font-14 line-height-17 font-300 color-white margin-bottom-16">Phone</a>
+	<a class="font-16 line-height-19 color-white margin-bottom-50">+1 (0) 44 832 58 58</a>
+	<a href="#contact" class="font-16 line-height-19 color-white margin-bottom-50">Contact</a>
 </div>
 <div style="height: 2.75rem; width: 100%;"></div>
 
 {% block content %}{% endblock %}
 
-<div class="footer">
+<div id="contact" class="footer flex-900-column">
 	<div class="footer-left">
 		{# <div class="footer-left-decoration-1">
 			<img src="./assets/images/decoration1.png">
@@ -44,14 +64,14 @@
 			<img src="./assets/images/decoration2.png">
 		</div> #}
 		<div class="footer-left-block">
-			<div class="flex flex-column">
+			<div class="flex flex-column margin-bottom-50">
 				<div class="font-46 color-white font-bold margin-bottom-35">CONTACT</div>
 				<div class="font-24 color-white">Lorem Ipsum is simply dummy </br> text of the printing</div>
 			</div>
 			<div class="flex flex-column">
-				<div class="font-24 color-white margin-bottom-66">Address</div>
-				<div class="flex">
-					<div class="flex flex-column margin-right-95">
+				<div class="font-24 color-white margin-bottom-50">Address</div>
+				<div class="flex flex-900-column">
+					<div class="flex flex-column margin-right-95 margin-bottom-35">
 						<p class="font-14 color-white line-height-17 margin-bottom-16">WATERBURY</p>
 						<p class="font-14 color-white line-height-17">Main Office</p>
 						<p class="font-14 color-white line-height-17">500 Chase Parkway</p>
@@ -59,7 +79,7 @@
 						<p class="font-14 color-white line-height-17">Phone: 203-755-6677</p>
 						<p class="font-14 color-white line-height-17">Toll-Free: (800) 463-8764</p>
 					</div>
-					<div class="flex flex-column">
+					<div class="flex flex-column margin-bottom-35">
 						<p class="font-14 color-white line-height-17 margin-bottom-16">WATERBURY</p>
 						<p class="font-14 color-white line-height-17">Hand to Shoulder Center</p>
 						<p class="font-14 color-white line-height-17">1320 West Main Street</p>
@@ -68,7 +88,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex flex-column">
+			<div class="flex flex-column display-none-900">
 				<div class="font-24 color-white margin-bottom-30">Social networks</div>
 				<div class="flex">
 					<img class="margin-right-16" src="./assets/images/icons/ig.png">
@@ -81,6 +101,14 @@
 	<div class="footer-right">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.0018225965655!2d-73.06685628456921!3d41.54755777924971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7c1c769116965%3A0x193ab5f6d2d2a41d!2sNOSS%3B%20Neurosurgery%2C%20Orthopaedics%20%26%20Spine%20Specialists%2C%20PC!5e0!3m2!1sen!2srs!4v1590764643079!5m2!1sen!2srs" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>
+	<div class="flex-column display-none flex-900 background-color-gold padding-40">
+		<div class="font-24 color-white margin-bottom-30">Social networks</div>
+		<div class="flex">
+			<img class="margin-right-16" src="./assets/images/icons/ig.png">
+			<img class="margin-right-16" src="./assets/images/icons/facebook.png">
+			<img src="./assets/images/icons/in.png">
+		</div>
+	</div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -89,10 +117,11 @@
 
 <script src="./js/owl.js"></script>
 <script src="./js/video.js"></script>
+<script src="./js/menu.js"></script>
 
 <script>
 	$(document).ready(function() {
-		$('.post-text p:has(img)').css({'margin-left':'-3rem', 'margin-right':'-3rem', 'margin-top':'2em', 'margin-bottom':'2em', 'text-align' : 'center',});
+		$('.post-text p:has(img)').css({'margin-left':'-2rem', 'margin-right':'-2rem', 'margin-top':'2rem', 'margin-bottom':'2rem', 'text-align' : 'center',});
 	});
 </script>
 
