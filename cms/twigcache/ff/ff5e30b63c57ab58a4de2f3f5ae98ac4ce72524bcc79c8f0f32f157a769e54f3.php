@@ -29,6 +29,9 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         $this->blocks = [
             'title' => [$this, 'block_title'],
             'description' => [$this, 'block_description'],
+            'og_url' => [$this, 'block_og_url'],
+            'og_title' => [$this, 'block_og_title'],
+            'og_description' => [$this, 'block_og_description'],
             'content' => [$this, 'block_content'],
         ];
     }
@@ -39,7 +42,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         // line 1
         echo "<!DOCTYPE html>
 <html lang=\"en\" style=\"height: 100%\">
-<head>
+<head prefix=\"og: https://johnstrugar.ga/\">
   <base href=\"";
         // line 4
         echo twig_escape_filter($this->env, ($context["_BASE"] ?? null), "html", null, true);
@@ -54,7 +57,22 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         // line 8
         $this->displayBlock('description', $context, $blocks);
         echo "\"/>
-\t<meta property=\"og:type\" content=\"website\" />
+\t
+\t<meta property=\"og:type\"          content=\"website\" />
+\t<meta property=\"og:url\"           content=\"";
+        // line 11
+        echo twig_escape_filter($this->env, ($context["_BASE"] ?? null), "html", null, true);
+        $this->displayBlock('og_url', $context, $blocks);
+        echo "\" />
+\t<meta property=\"og:title\"         content=\"";
+        // line 12
+        $this->displayBlock('og_title', $context, $blocks);
+        echo "\" />
+\t<meta property=\"og:description\"   content=\"";
+        // line 13
+        $this->displayBlock('og_description', $context, $blocks);
+        echo "\" />
+\t<meta property=\"og:image\"         content=\"https://johnstrugar.ga/assets/images/home_intro.jpg\" />
 \t
   <link rel=\"stylesheet\" type=\"text/css\" href=\"cms/sharedstyle.css\">
 \t<link rel=\"stylesheet\" href=\"owl/assets/owl.carousel.min.css\"/>
@@ -104,9 +122,9 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 <div style=\"height: 2.75rem; width: 100%;\"></div>
 
 ";
-        // line 58
+        // line 63
         $this->displayBlock('content', $context, $blocks);
-        // line 59
+        // line 64
         echo "
 <div id=\"contact\" class=\"footer flex-900-column\">
 \t<div class=\"footer-left\">
@@ -191,7 +209,25 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         $macros = $this->macros;
     }
 
-    // line 58
+    // line 11
+    public function block_og_url($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+    }
+
+    // line 12
+    public function block_og_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+    }
+
+    // line 13
+    public function block_og_description($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+    }
+
+    // line 63
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -209,7 +245,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
     public function getDebugInfo()
     {
-        return array (  195 => 58,  189 => 8,  183 => 5,  110 => 59,  108 => 58,  55 => 8,  49 => 5,  45 => 4,  40 => 1,);
+        return array (  231 => 63,  225 => 13,  219 => 12,  213 => 11,  207 => 8,  201 => 5,  128 => 64,  126 => 63,  73 => 13,  69 => 12,  64 => 11,  58 => 8,  52 => 5,  48 => 4,  43 => 1,);
     }
 
     public function getSourceContext()
