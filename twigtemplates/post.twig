@@ -1,6 +1,6 @@
 {% extends "base.twig" %}
 {% set Post = fetch("Blog", {"id": _GET['1']})[0] %}
-{% block og_url %}post/{{Post.Slug}}{% endblock %}
+{% block og_url %}{{Post.Slug}}{% endblock %}
 {% block og_title %} {{Post.og_title}}{% endblock %}
 {% block og_description %}{{Post.og_description}}{% endblock %}
 {% block og_image %}{{Post.og_image}}{% endblock %}
