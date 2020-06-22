@@ -101,6 +101,14 @@ button:focus {
     height: 43rem;
   }
 }
+.footer-background {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/images/footer_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .footer-left {
   width: 50%;
   height: 100%;
@@ -879,6 +887,14 @@ button:focus {
     height: auto;
   }
 }
+.home-about-background {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/images/about_background.png');
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .home-about-image {
   height: 100%;
   background-image: url(../assets/images/home_about.jpg);
@@ -1041,6 +1057,14 @@ button:focus {
 }
 .post-text {
   width: 38.375rem;
+}
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/white_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .treatments-intro {
   height: calc(100vh - 2.75rem);

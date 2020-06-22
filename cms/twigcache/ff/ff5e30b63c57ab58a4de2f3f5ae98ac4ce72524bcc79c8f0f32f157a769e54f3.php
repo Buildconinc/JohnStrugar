@@ -101,9 +101,8 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         echo "
 <div id=\"contact\" class=\"footer flex-900-column\">
 \t<div class=\"footer-left\">
-\t\t";
-        // line 66
-        echo "\t\t<div class=\"footer-left-block\">
+\t<div class=\"footer-background\">
+\t\t<div class=\"footer-left-block\">
 \t\t\t<div class=\"flex flex-column margin-bottom-50\">
 \t\t\t\t<div class=\"font-46 color-white font-bold margin-bottom-35\">CONTACT</div>
 \t\t\t\t<div class=\"font-24 color-white\">Lorem Ipsum is simply dummy </br> text of the printing</div>
@@ -136,6 +135,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t\t\t\t\t<img src=\"./assets/images/icons/in.png\">
 \t\t\t\t</div>
 \t\t\t</div>
+\t\t</div>
 \t\t</div>
 \t</div>
 \t<div class=\"footer-right\">
@@ -188,7 +188,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
     public function getDebugInfo()
     {
-        return array (  174 => 56,  106 => 66,  101 => 57,  99 => 56,  50 => 9,  43 => 4,  38 => 1,);
+        return array (  174 => 56,  101 => 57,  99 => 56,  50 => 9,  43 => 4,  38 => 1,);
     }
 
     public function getSourceContext()
