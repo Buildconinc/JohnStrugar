@@ -96,7 +96,7 @@ class __TwigTemplate_ab1c89aae8fc3bf4a78957763676fa746a247c5b5b2bcb9e6b8b231149b
         echo twig_escape_filter($this->env, twig_urlencode_filter(twig_get_attribute($this->env, $this->source, ($context["Post"] ?? null), "Slug", [], "any", false, false, false, 21)), "html", null, true);
         echo "&amp;url=";
         echo twig_escape_filter($this->env, twig_urlencode_filter(($context["_BASE"] ?? null)), "html", null, true);
-        echo "prost%2F";
+        echo "post%2F";
         echo twig_escape_filter($this->env, twig_urlencode_filter(twig_get_attribute($this->env, $this->source, ($context["Post"] ?? null), "Slug", [], "any", false, false, false, 21)), "html", null, true);
         echo "\" target=\"_blank\">
 \t\t\t<img src=\"./assets/images/icons/twitter.png\">
