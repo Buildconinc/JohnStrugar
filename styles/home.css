@@ -43,6 +43,14 @@
     height: auto;
   }
 }
+.home-about-background {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/images/about_background.png');
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .home-about-image {
   height: 100%;
   background-image: url(../assets/images/home_about.jpg);
