@@ -25,6 +25,8 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'description' => [$this, 'block_description'],
             'content' => [$this, 'block_content'],
         ];
     }
@@ -46,10 +48,25 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
     }
 
     // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        echo " | ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Title", [], "any", false, false, false, 3), "html", null, true);
+    }
+
+    // line 4
+    public function block_description($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "short_text", [], "any", false, false, false, 4), "html", null, true);
+    }
+
+    // line 5
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 4
+        // line 6
         echo "
 <!-- intro -->
 <div class=\"flex padding-top-160 padding-bottom-160\">
@@ -57,20 +74,20 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
 \t<div class=\"flex flex-column\">
 \t\t<div class=\"font-16 line-height-19 color-black margin-left-40 margin-bottom-6\">Treatments</div>
 \t\t<div class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">";
-        // line 10
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Title", [], "any", false, false, false, 10), "html", null, true);
+        // line 12
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Title", [], "any", false, false, false, 12), "html", null, true);
         echo "</div>
 \t\t<div class=\"flex flex-900-column\">
 \t\t\t<div class=\"flex flex-column margin-right-120 margin-900-bottom-40 margin-900-right-40\">
 \t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 width-710\">";
-        // line 13
-        echo twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Description", [], "any", false, false, false, 13);
+        // line 15
+        echo twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Description", [], "any", false, false, false, 15);
         echo "</div>
 \t\t\t</div>
 \t\t\t<div class=\"flex flex-column\">
 \t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 width-710 margin-900-left-40 margin-900-right-40\">";
-        // line 16
-        echo twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "description2", [], "any", false, false, false, 16);
+        // line 18
+        echo twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "description2", [], "any", false, false, false, 18);
         echo "</div>
 \t\t\t</div>
 \t\t</div>
@@ -80,12 +97,12 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
 <!-- video -->
 <div class=\"home-intro flex al-it-end ju-co-center\">
 \t<a data-fancybox id=\"v";
-        // line 24
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "id", [], "any", false, false, false, 24), "html", null, true);
+        // line 26
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "id", [], "any", false, false, false, 26), "html", null, true);
         echo "\" onclick=\"url2embed('v";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "id", [], "any", false, false, false, 24), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "id", [], "any", false, false, false, 26), "html", null, true);
         echo "','";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Video", [], "any", false, false, false, 24), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["treatment"] ?? null), "Video", [], "any", false, false, false, 26), "html", null, true);
         echo "');\">
 \t\t<img class=\"home-intro-play\" src=\"./assets/images/icons/play.png\">\t
 \t</a>
@@ -93,44 +110,44 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
 
 <!-- testimonial -->
 ";
-        // line 30
-        $this->loadTemplate("testimonial.twig", "treatment.twig", 30)->display($context);
-        // line 31
+        // line 32
+        $this->loadTemplate("testimonial.twig", "treatment.twig", 32)->display($context);
+        // line 33
         echo "
 <!-- treatments -->
 <div class=\"font-32 line-height-38 color-black background-color-white padding-left-114 padding-top-90 padding-bottom-90\">Treatments</div>
 <div id=\"owl3\" class=\"owl-carousel owl-theme flex flex-wrap\">
 ";
-        // line 35
+        // line 37
         $context["Treatments"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Treatments"]);
-        // line 36
+        // line 38
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["Treatments"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 37
+            // line 39
             echo "\t<!-- 1 -->
 \t<div class=\"flex flex-column margin-bottom-81\">
 \t\t<div class=\"treatments-tretment-image margin-bottom-50\" style=\"background-image: url('img/";
-            // line 39
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 39), "html", null, true);
+            // line 41
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 41), "html", null, true);
             echo "')\"></div>
 \t\t<div class=\"treatments-tretment-text font-20 line-height-24 font-bold color-black margin-left-114 margin-bottom-22\">";
-            // line 40
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 40), "html", null, true);
+            // line 42
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 42), "html", null, true);
             echo "</div>
 \t\t<div class=\"flex-wrap-7-line treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114\">";
-            // line 41
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 41), "html", null, true);
+            // line 43
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 43), "html", null, true);
             echo "</div>
 \t\t<div class=\"flex al-it-center\">
 \t\t\t<div class=\"line-black margin-left-114\"></div>
 \t\t\t<a href=\"treatment/";
-            // line 44
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 44), "html", null, true);
+            // line 46
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 46), "html", null, true);
             echo "\" class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</a>
 \t\t\t<a href=\"treatment/";
-            // line 45
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 45), "html", null, true);
+            // line 47
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 47), "html", null, true);
             echo "\">
 \t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
 \t\t\t</a>
@@ -141,7 +158,7 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 51
+        // line 53
         echo "</div>
 ";
     }
@@ -158,7 +175,7 @@ class __TwigTemplate_5781a95e91d77eabc83df4ec23b29e504e276633fb30c771319be0e875b
 
     public function getDebugInfo()
     {
-        return array (  145 => 51,  133 => 45,  129 => 44,  123 => 41,  119 => 40,  115 => 39,  111 => 37,  107 => 36,  105 => 35,  99 => 31,  97 => 30,  84 => 24,  73 => 16,  67 => 13,  61 => 10,  53 => 4,  49 => 3,  44 => 1,  42 => 2,  35 => 1,);
+        return array (  162 => 53,  150 => 47,  146 => 46,  140 => 43,  136 => 42,  132 => 41,  128 => 39,  124 => 38,  122 => 37,  116 => 33,  114 => 32,  101 => 26,  90 => 18,  84 => 15,  78 => 12,  70 => 6,  66 => 5,  59 => 4,  51 => 3,  46 => 1,  44 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
