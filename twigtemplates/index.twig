@@ -2,7 +2,7 @@
 {% set Title_and_Description = fetch("Title_and_Description", {"id": _GET['0']})[0] %}
 {% block og_url %}{% endblock %}
 {% set About_us = fetch("About_us") %}
-{% block og_image %}{{ src="img/{{item.about_us_photo}}"}}{% endblock %}
+{% block og_image %}{{ src="img/{{About_us.about_us_photo}}"}}{% endblock %}
 {% block title %} | {{Title_and_Description.Title}}{% endblock %}
 {% block description %}{{Title_and_Description.description}}{% endblock %}
 {% block content %}
