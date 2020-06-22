@@ -1,5 +1,9 @@
 {% extends "base.twig" %}
 {% set Post = fetch("Blog", {"id": _GET['1']})[0] %}
+{% block og_url %} post/{{Post.Slug}}{% endblock %}
+{% block og_title %} {{Post.og_title}}{% endblock %}
+{% block og_description %}{{Post.og_description}}{% endblock %}
+{% block og_image %}{{Post.og_image}}{% endblock %}
 {% block content %}
 
 <!-- title -->
@@ -16,12 +20,12 @@
 <!-- share -->
 <div class="flex ju-co-center margin-bottom-97">
 	<div class="margin-left-16 margin-right-16">
-		<a href="https://twitter.com/share?url={{post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+		<a href="https://twitter.com/share?url={{Post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{Post.Slug | url_encode}}" target="_blank">
 			<img src="./assets/images/icons/twitter.png">
 		</a>
 	</div>
 	<div class="margin-left-16 margin-right-16">
-		<a href="http://www.facebook.com/sharer/sharer.php?u={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+		<a href="http://www.facebook.com/sharer/sharer.php?u={{_BASE | url_encode}}prost%2F{{Post.Slug | url_encode}}" target="_blank">
 			<img src="./assets/images/icons/fb.png">
 		</a>
 	</div>

@@ -1,4 +1,7 @@
 {% extends "base.twig" %}
+{% set Title_and_Description = fetch("Title_and_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{Title_and_Description.Title}}{% endblock %}
+{% block description %}{{Title_and_Description.description}}{% endblock %}
 {% block content %}
 
 <!-- intro -->

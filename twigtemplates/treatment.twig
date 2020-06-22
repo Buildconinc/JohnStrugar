@@ -1,5 +1,7 @@
 {% extends "base.twig" %}
 {% set treatment = fetch("Treatments", {"id": _GET['1']})[0] %}
+{% block title %} | {{treatment.Title}}{% endblock %}
+{% block description %}{{treatment.short_text}}{% endblock %}
 {% block content %}
 
 <!-- intro -->

@@ -27,6 +27,8 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         $this->parent = false;
 
         $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'description' => [$this, 'block_description'],
             'content' => [$this, 'block_content'],
         ];
     }
@@ -42,12 +44,19 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         // line 4
         echo twig_escape_filter($this->env, ($context["_BASE"] ?? null), "html", null, true);
         echo "\">
-  <title>John G. Strugar</title>
+\t<title>John G. Strugar ";
+        // line 5
+        $this->displayBlock('title', $context, $blocks);
+        echo "</title>
   <meta charset=\"UTF-8\">
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-  ";
-        // line 9
-        echo "  <link rel=\"stylesheet\" type=\"text/css\" href=\"cms/sharedstyle.css\">
+\t<meta name=\"description\" content=\"";
+        // line 8
+        $this->displayBlock('description', $context, $blocks);
+        echo "\"/>
+\t<meta property=\"og:type\" content=\"website\" />
+\t
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"cms/sharedstyle.css\">
 \t<link rel=\"stylesheet\" href=\"owl/assets/owl.carousel.min.css\"/>
   <link rel=\"stylesheet\" href=\"owl/assets/owl.theme.default.css\"/>  
 \t<link rel=\"stylesheet\" href=\"fancybox-master/dist/jquery.fancybox.min.css\" />
@@ -95,9 +104,9 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 <div style=\"height: 2.75rem; width: 100%;\"></div>
 
 ";
-        // line 56
+        // line 58
         $this->displayBlock('content', $context, $blocks);
-        // line 57
+        // line 59
         echo "
 <div id=\"contact\" class=\"footer flex-900-column\">
 \t<div class=\"footer-left\">
@@ -170,7 +179,19 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 ";
     }
 
-    // line 56
+    // line 5
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+    }
+
+    // line 8
+    public function block_description($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+    }
+
+    // line 58
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -188,7 +209,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
     public function getDebugInfo()
     {
-        return array (  174 => 56,  101 => 57,  99 => 56,  50 => 9,  43 => 4,  38 => 1,);
+        return array (  195 => 58,  189 => 8,  183 => 5,  110 => 59,  108 => 58,  55 => 8,  49 => 5,  45 => 4,  40 => 1,);
     }
 
     public function getSourceContext()
