@@ -83,6 +83,8 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
   <link rel=\"stylesheet\" href=\"owl/assets/owl.theme.default.css\"/>  
 \t<link rel=\"stylesheet\" href=\"fancybox-master/dist/jquery.fancybox.min.css\" />
 \t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles/style.css\">
+
+\t<link rel=\"icon\" rel=\"icon\" type=\"image/png\" href=\"assets/images/icons/logo.png\">
 </head>
 <body >
 
@@ -126,9 +128,9 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 <div style=\"height: 2.75rem; width: 100%;\"></div>
 
 ";
-        // line 63
+        // line 65
         $this->displayBlock('content', $context, $blocks);
-        // line 64
+        // line 66
         echo "
 <div id=\"contact\" class=\"footer flex-900-column\">
 \t<div class=\"footer-left\">
@@ -237,7 +239,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         $macros = $this->macros;
     }
 
-    // line 63
+    // line 65
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -255,7 +257,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
     public function getDebugInfo()
     {
-        return array (  241 => 63,  235 => 14,  229 => 13,  223 => 12,  217 => 11,  211 => 8,  205 => 5,  132 => 64,  130 => 63,  78 => 14,  74 => 13,  70 => 12,  65 => 11,  59 => 8,  53 => 5,  49 => 4,  44 => 1,);
+        return array (  243 => 65,  237 => 14,  231 => 13,  225 => 12,  219 => 11,  213 => 8,  207 => 5,  134 => 66,  132 => 65,  78 => 14,  74 => 13,  70 => 12,  65 => 11,  59 => 8,  53 => 5,  49 => 4,  44 => 1,);
     }
 
     public function getSourceContext()
