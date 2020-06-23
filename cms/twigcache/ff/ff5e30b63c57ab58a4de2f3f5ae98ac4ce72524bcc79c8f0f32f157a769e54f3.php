@@ -32,6 +32,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
             'og_url' => [$this, 'block_og_url'],
             'og_title' => [$this, 'block_og_title'],
             'og_description' => [$this, 'block_og_description'],
+            'og_image' => [$this, 'block_og_image'],
             'content' => [$this, 'block_content'],
         ];
     }
@@ -42,7 +43,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         // line 1
         echo "<!DOCTYPE html>
 <html lang=\"en\" style=\"height: 100%\">
-<head prefix=\"og: https://johnstrugar.ga/\">
+<head>
   <base href=\"";
         // line 4
         echo twig_escape_filter($this->env, ($context["_BASE"] ?? null), "html", null, true);
@@ -72,7 +73,10 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         // line 13
         $this->displayBlock('og_description', $context, $blocks);
         echo "\" />
-\t<meta property=\"og:image\"         content=\"https://johnstrugar.ga/assets/images/home_intro.jpg\" />
+\t<meta property=\"og:image\"         content=\"";
+        // line 14
+        $this->displayBlock('og_image', $context, $blocks);
+        echo "\" />
 \t
   <link rel=\"stylesheet\" type=\"text/css\" href=\"cms/sharedstyle.css\">
 \t<link rel=\"stylesheet\" href=\"owl/assets/owl.carousel.min.css\"/>
@@ -227,6 +231,12 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
         $macros = $this->macros;
     }
 
+    // line 14
+    public function block_og_image($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+    }
+
     // line 63
     public function block_content($context, array $blocks = [])
     {
@@ -245,7 +255,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 
     public function getDebugInfo()
     {
-        return array (  231 => 63,  225 => 13,  219 => 12,  213 => 11,  207 => 8,  201 => 5,  128 => 64,  126 => 63,  73 => 13,  69 => 12,  64 => 11,  58 => 8,  52 => 5,  48 => 4,  43 => 1,);
+        return array (  241 => 63,  235 => 14,  229 => 13,  223 => 12,  217 => 11,  211 => 8,  205 => 5,  132 => 64,  130 => 63,  78 => 14,  74 => 13,  70 => 12,  65 => 11,  59 => 8,  53 => 5,  49 => 4,  44 => 1,);
     }
 
     public function getSourceContext()

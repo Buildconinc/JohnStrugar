@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="{% block description %}{% endblock %}"/>
 	
-	{# <meta property="og:type"          content="website" />
+	<meta property="og:type"          content="website" />
 	<meta property="og:url"           content="{{_BASE}}{% block og_url %}{% endblock %}" />
 	<meta property="og:title"         content="{% block og_title %}{% endblock %}" />
 	<meta property="og:description"   content="{% block og_description %}{% endblock %}" />
-	<meta property="og:image"         content="https://johnstrugar.ga/assets/images/home_intro.jpg" /> #}
+	<meta property="og:image"         content="{% block og_image %}{% endblock %}" />
 	
   <link rel="stylesheet" type="text/css" href="cms/sharedstyle.css">
 	<link rel="stylesheet" href="owl/assets/owl.carousel.min.css"/>
