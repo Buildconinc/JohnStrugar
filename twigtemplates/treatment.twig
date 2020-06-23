@@ -2,6 +2,10 @@
 {% set treatment = fetch("Treatments", {"id": _GET['1']})[0] %}
 {% block title %} | {{treatment.Title}}{% endblock %}
 {% block description %}{{treatment.short_text}}{% endblock %}
+{% block og_url %}/treatment/{{Post.Slug}}{% endblock %}
+{% block og_title %} {{Post.og_title}}{% endblock %}
+{% block og_description %}{{Post.og_description}}{% endblock %}
+{% block og_image %}{{_BASE}}/img/{{Post.og_image}}{% endblock %}
 {% block content %}
 
 <!-- intro -->
