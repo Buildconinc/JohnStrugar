@@ -37,7 +37,7 @@ class __TwigTemplate_90920c5ae2f6faacca1166d0f6e00e16d7b965546a6ccfc05e2931755c9
         echo "<div style=\"overflow: hidden;\" class=\"flex\">
 \t<div class=\"background-image flex padding-top-160 padding-bottom-160\">
 \t\t<div class=\"line-black margin-left-64 margin-top-19 display-none-960\"></div>
-\t\t<div class=\"flex flex-column\">
+\t\t<div class=\"width-135-per flex flex-column\">
 \t\t\t<div class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">Treatments</div>
 \t\t\t";
         // line 6

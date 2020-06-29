@@ -106,18 +106,18 @@ class __TwigTemplate_7d412aba83a52092a8fd184ea340fcba225f01caa947cf88c0e231f9fa6
 <!-- intro -->
 <div class=\"treatments-intro flex al-it-center\">
 \t<div class=\"flex flex-column display-none-960\">
-\t\t<div class=\"treatments-intro-title color-black margin-left-114 margin-bottom-50\">General text about treatments</div>
-\t\t<div class=\"treatments-intro-text font-14 color-black line-height-22 margin-bottom-38 width-386 margin-left-114\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+\t\t<div class=\"treatments-intro-title color-black margin-left-114 margin-bottom-50\">Diseases of the spine</div>
+\t\t<div class=\"treatments-intro-text font-14 color-black line-height-22 margin-bottom-38 width-386 margin-left-114\">Spinal stenosis, disc herniations, deformities, fractures, degenerative disease and tumors that lead to loss of motor and sensory function, pain, and if untreated, paralysis. There are surgical and non-surgical treatments but I will discuss the surgical bellow. These surgical approaches are not exhaustive, but are the more commonly encountered.</div>
 \t</div>
 </div>
 <div class=\"flex-960 flex-column display-none margin-top-40 margin-bottom-40\">
-\t<div class=\"treatments-intro-title color-black margin-left-114 margin-bottom-50\">General text about treatments</div>
-\t<div class=\"treatments-intro-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+\t<div class=\"treatments-intro-title color-black margin-left-114 margin-bottom-50\">Diseases of the spine</div>
+\t<div class=\"treatments-intro-text font-14 color-black line-height-22 margin-bottom-38 margin-left-114\">Spinal stenosis, disc herniations, deformities, fractures, degenerative disease and tumors that lead to loss of motor and sensory function, pain, and if untreated, paralysis. There are surgical and non-surgical treatments but I will discuss the surgical bellow. These surgical approaches are not exhaustive, but are the more commonly encountered.</div>
 </div>
 
 <!-- treatments -->
 <div class=\"font-32 line-height-38 color-black background-color-white padding-left-114 padding-top-90 padding-bottom-90\">Treatments</div>
-<div class=\"flex flex-wrap padding-left-114 ju-co-900-center\">
+<div class=\"flex flex-wrap ju-co-center\">
 \t";
         // line 26
         $context["Treatments"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Treatments"]);
