@@ -84,7 +84,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t<link rel=\"stylesheet\" href=\"fancybox-master/dist/jquery.fancybox.min.css\" />
 \t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles/style.css\">
 
-\t<link rel=\"icon\" rel=\"icon\" type=\"image/png\" href=\"assets/images/icons/logo.png\">
+\t<link rel=\"icon\" rel=\"icon\" type=\"image/ico\" href=\"assets/images/favicon.ico\">
 </head>
 <body >
 
@@ -138,7 +138,7 @@ class __TwigTemplate_ae44558743b35f39d44c27fd22f9be8554b316686d1396632fd70e6d807
 \t\t<div class=\"footer-left-block\">
 \t\t\t<div class=\"flex flex-column margin-bottom-50\">
 \t\t\t\t<div class=\"font-46 color-white font-bold margin-bottom-35\">CONTACT</div>
-\t\t\t\t<div class=\"font-24 color-white\">Lorem Ipsum is simply dummy </br> text of the printing</div>
+\t\t\t\t<div class=\"font-24 color-white\">Request an Appointment</div>
 \t\t\t</div>
 \t\t\t<div class=\"flex flex-column\">
 \t\t\t\t<div class=\"font-24 color-white margin-bottom-50\">Address</div>

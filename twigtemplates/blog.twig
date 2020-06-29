@@ -37,15 +37,15 @@
 
 <!-- blog posts -->
 <div class="background-color-grey flex">
-	<div class="flex margin-top-97 width-100per">
-		<div class="line-transparent margin-left-64 margin-top-19 display-none-960"></div>
+	<div class="flex margin-top-97 width-100per ju-co-center">
+		{# <div class="line-transparent margin-left-64 margin-top-19 display-none-960"></div> #}
 		<div class="flex flex-column al-it-900-center">
 			<div class="flex flex-wrap margin-left-40 ju-co-900-center">
 			
 			{% for item in Blog %}
 			{% if loop.index > 1 %}
 				<div class="flex flex-column margin-bottom-97 margin-right-40">
-					<img class="image margin-bottom-22" style="background-image: url('img/{{item.Photo}}')">
+					<div class="image margin-bottom-22" style="background-image: url('img/{{item.Photo}}')"></div>
 					<div class="width-24vw font-24 font-bold color-black line-height-28 margin-bottom-14">{{item.Title}}</div>
 					<div class="flex-wrap-3-line width-24vw font-14 color-black line-height-22 margin-bottom-22">{{item.short_text}}</div>
 					<div class="flex al-it-center">
