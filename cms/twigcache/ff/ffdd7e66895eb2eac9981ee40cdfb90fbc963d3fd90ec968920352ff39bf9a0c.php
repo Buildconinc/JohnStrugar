@@ -57,7 +57,7 @@ class __TwigTemplate_90920c5ae2f6faacca1166d0f6e00e16d7b965546a6ccfc05e2931755c9
             // line 10
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 10), "html", null, true);
             echo "</div>
-\t\t\t\t\t<div class=\"flex-wrap-7-line font-14 color-black font-300 line-height-22 margin-bottom-6 width-710 margin-900-bottom-40 margin-900-right-40 border-box\">";
+\t\t\t\t\t<div class=\"flex-wrap-7-line font-14 color-black font-300 line-height-22 margin-bottom-6 width-710 margin-900-bottom-40 border-box\">";
             // line 11
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 11), "html", null, true);
             echo "</div>

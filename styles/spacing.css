@@ -237,7 +237,12 @@
 }
 @media screen and (max-width: 900px) {
   .width-710 {
-    max-width: 100%;
+    max-width: 20.375rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .width-710 {
+    max-width: 18.375rem;
   }
 }
 .width-550 {
