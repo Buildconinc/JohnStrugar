@@ -295,6 +295,14 @@
 .width-100per {
   width: 100%;
 }
+.width-135-per {
+  width: 135%;
+}
+@media screen and (max-width: 900px) {
+  .width-135-per {
+    width: 100%;
+  }
+}
 .height-430 {
   height: 26.875rem;
 }

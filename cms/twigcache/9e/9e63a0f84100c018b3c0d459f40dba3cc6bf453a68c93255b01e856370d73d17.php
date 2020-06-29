@@ -27,6 +27,10 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
         $this->blocks = [
             'title' => [$this, 'block_title'],
             'description' => [$this, 'block_description'],
+            'og_url' => [$this, 'block_og_url'],
+            'og_title' => [$this, 'block_og_title'],
+            'og_description' => [$this, 'block_og_description'],
+            'og_image' => [$this, 'block_og_image'],
             'content' => [$this, 'block_content'],
         ];
     }
@@ -63,10 +67,40 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
     }
 
     // line 5
+    public function block_og_url($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+    }
+
+    // line 6
+    public function block_og_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        echo " ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Title_and_Description"] ?? null), "Title", [], "any", false, false, false, 6), "html", null, true);
+    }
+
+    // line 7
+    public function block_og_description($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Title_and_Description"] ?? null), "description", [], "any", false, false, false, 7), "html", null, true);
+    }
+
+    // line 8
+    public function block_og_image($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        echo twig_escape_filter($this->env, ($context["_BASE"] ?? null), "html", null, true);
+        echo "/img/";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Title_and_Description"] ?? null), "og_img", [], "any", false, false, false, 8), "html", null, true);
+    }
+
+    // line 9
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 6
+        // line 10
         echo "
 <!-- intro -->
 <div class=\"home-intro flex al-it-center\">
@@ -76,10 +110,58 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 \t\t <div class=\"flex\">
 \t\t\t<div class=\"line-white margin-left-64 margin-top-55\"></div>
 \t\t\t<div class=\"flex flex-column\">
-\t\t\t\t<div class=\"font-16 color-white line-height-19 margin-left-40 margin-bottom-16\">Treatments</div>
-\t\t\t\t<div class=\"font-32 color-white line-height-38 margin-bottom-38 width-416 margin-left-40\">Lorem Ipsum is simply dummy text</div>
-\t\t\t\t<div class=\"font-14 color-white font-300 line-height-22 margin-left-40 margin-bottom-66 width-462\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
-\t\t\t</div>
+\t\t\t";
+        // line 19
+        $context["Treatments"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Treatments"]);
+        // line 20
+        echo "\t\t\t";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["Treatments"] ?? null));
+        $context['loop'] = [
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        ];
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof \Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
+        foreach ($context['_seq'] as $context["_key"] => $context["treatment"]) {
+            // line 21
+            echo "\t\t\t\t";
+            if (((twig_get_attribute($this->env, $this->source, $context["treatment"], "show", [], "any", false, false, false, 21) == true) && (twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 21) < 2))) {
+                // line 22
+                echo "\t\t\t\t<div class=\"font-16 color-white line-height-19 margin-left-40 margin-bottom-16\">Treatments</div>
+\t\t\t\t<div class=\"font-32 color-white line-height-38 margin-bottom-38 width-416 margin-left-40\">";
+                // line 23
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["treatment"], "Title", [], "any", false, false, false, 23), "html", null, true);
+                echo "</div>
+\t\t\t\t<div class=\"font-14 color-white font-300 line-height-22 margin-left-40 margin-bottom-66 width-462\">";
+                // line 24
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["treatment"], "short_text", [], "any", false, false, false, 24), "html", null, true);
+                echo " </div>
+\t\t\t\t";
+            }
+            // line 26
+            echo "\t\t\t";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['treatment'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 27
+        echo "\t\t\t</div>
 \t\t</div>
 \t\t<div class=\"flex al-it-center\">
 \t\t\t<div class=\"line-white margin-left-64\"></div>
@@ -93,9 +175,9 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 
 <!-- treatments -->
 ";
-        // line 31
-        $this->loadTemplate("treatments-slider.twig", "index.twig", 31)->display($context);
-        // line 32
+        // line 40
+        $this->loadTemplate("treatments-slider.twig", "index.twig", 40)->display($context);
+        // line 41
         echo "
 <!-- blog posts -->
 <div class=\"background-color-grey flex\">
@@ -103,38 +185,38 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 \t\t<div class=\"line-black margin-left-64 margin-top-19 display-none-960\"></div>
 \t\t<div class=\"flex flex-column\">
 \t\t\t<div class=\"font-32 color-black line-height-38 margin-left-40 margin-right-40 margin-bottom-81\">General Health Advice</div>
-\t\t\t<div class=\"flex flex-wrap margin-left-40\">
+\t\t\t<div class=\"flex flex-wrap margin-left-40 ju-co-center\">
 \t\t\t";
-        // line 40
+        // line 49
         $context["Blog"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Blog"]);
-        // line 41
+        // line 50
         echo "\t\t\t";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["Blog"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 42
+            // line 51
             echo "\t\t\t\t<div class=\"flex flex-column margin-bottom-97 margin-right-40\">
-\t\t\t\t\t<img class=\"image margin-bottom-22\" style=\"background-image: url('img/";
-            // line 43
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Photo", [], "any", false, false, false, 43), "html", null, true);
-            echo "')\">
+\t\t\t\t\t<div class=\"image margin-bottom-22\" style=\"background-image: url('img/";
+            // line 52
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Photo", [], "any", false, false, false, 52), "html", null, true);
+            echo "')\"></div>
 \t\t\t\t\t<div class=\"width-24vw font-24 font-bold color-black line-height-28 margin-bottom-14\">";
-            // line 44
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 44), "html", null, true);
+            // line 53
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 53), "html", null, true);
             echo "</div>
 \t\t\t\t\t<div class=\"flex-wrap-3-line width-24vw font-14 color-black line-height-22 margin-bottom-22\">";
-            // line 45
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 45), "html", null, true);
+            // line 54
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 54), "html", null, true);
             echo "</div>
 \t\t\t\t\t<div class=\"flex al-it-center\">
 \t\t\t\t\t\t<div class=\"line-small-black\"></div>
 \t\t\t\t\t\t<a href=\"post/";
-            // line 48
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 48), "html", null, true);
+            // line 57
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 57), "html", null, true);
             echo "\" class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</a>
 \t\t\t\t\t\t<a href=\"post/";
-            // line 49
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 49), "html", null, true);
+            // line 58
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 58), "html", null, true);
             echo "\">
 \t\t\t\t\t\t\t<img src=\"./assets/images/icons/arrowRight.png\">
 \t\t\t\t\t\t</a>
@@ -145,16 +227,16 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 55
+        // line 64
         echo "\t\t\t</div>
 \t\t</div>
 \t</div>\t
 </div>
 
 ";
-        // line 60
+        // line 69
         $context["About_us"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["About_us"]);
-        // line 61
+        // line 70
         echo "<!-- about -->
 <div class=\"flex home-about flex-900-column\">
 \t<div class=\"backgroung-color-white width-50per\">
@@ -164,16 +246,16 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 \t\t\t\t<div class=\"flex flex-column\">
 \t\t\t\t\t<div class=\"font-16 font-300 color-black line-height-19 margin-left-40 margin-bottom-11\">About</div>
 \t\t\t\t\t<div class=\"font-46 color-black line-height-54 margin-bottom-11 margin-left-40\">";
-        // line 69
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "Name", [], "any", false, false, false, 69), "html", null, true);
+        // line 78
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "Name", [], "any", false, false, false, 78), "html", null, true);
         echo "</div>
 \t\t\t\t\t<div class=\"font-36 color-black line-height-42 margin-left-40 margin-bottom-50\">";
-        // line 70
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "Position", [], "any", false, false, false, 70), "html", null, true);
+        // line 79
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "Position", [], "any", false, false, false, 79), "html", null, true);
         echo "</div>
 \t\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-bottom-66 width-462 border-box margin-right-40\">";
-        // line 71
-        echo twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "about_us_text", [], "any", false, false, false, 71);
+        // line 80
+        echo twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "about_us_text", [], "any", false, false, false, 80);
         echo "</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -191,7 +273,7 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 
 <!-- text -->
 <div class=\"background-color-grey flex al-it-center ju-co-center height-430 padding-40\">
-\t<div class=\"font-24 font-300 line-height-36 color-black text-align-center width-854\">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from</div>
+\t<div class=\"font-24 font-300 line-height-36 color-black text-align-center width-854\">To practice Neurosurgery at present requires keeping what works and persisting at introducing innovation.</div>
 </div>
 
 ";
@@ -209,7 +291,7 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 
     public function getDebugInfo()
     {
-        return array (  176 => 71,  172 => 70,  168 => 69,  158 => 61,  156 => 60,  149 => 55,  137 => 49,  133 => 48,  127 => 45,  123 => 44,  119 => 43,  116 => 42,  111 => 41,  109 => 40,  99 => 32,  97 => 31,  70 => 6,  66 => 5,  59 => 4,  51 => 3,  46 => 1,  44 => 2,  37 => 1,);
+        return array (  258 => 80,  254 => 79,  250 => 78,  240 => 70,  238 => 69,  231 => 64,  219 => 58,  215 => 57,  209 => 54,  205 => 53,  201 => 52,  198 => 51,  193 => 50,  191 => 49,  181 => 41,  179 => 40,  164 => 27,  150 => 26,  145 => 24,  141 => 23,  138 => 22,  135 => 21,  117 => 20,  115 => 19,  104 => 10,  100 => 9,  91 => 8,  84 => 7,  76 => 6,  70 => 5,  63 => 4,  55 => 3,  50 => 1,  48 => 2,  41 => 1,);
     }
 
     public function getSourceContext()
