@@ -117,7 +117,7 @@ class __TwigTemplate_7d412aba83a52092a8fd184ea340fcba225f01caa947cf88c0e231f9fa6
 
 <!-- treatments -->
 <div class=\"font-32 line-height-38 color-black background-color-white padding-left-114 padding-top-90 padding-bottom-90\">Treatments</div>
-<div class=\"flex flex-wrap ju-co-center\">
+<div class=\"flex flex-wrap ju-co-center margin-left-40\">
 \t";
         // line 26
         $context["Treatments"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Treatments"]);

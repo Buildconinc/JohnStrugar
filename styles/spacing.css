@@ -253,6 +253,11 @@
     max-width: 32.375rem;
   }
 }
+@media screen and (max-width: 550px) {
+  .width-550 {
+    max-width: 100%;
+  }
+}
 .width-516 {
   max-width: 32.25rem;
 }

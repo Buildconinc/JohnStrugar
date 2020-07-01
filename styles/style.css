@@ -163,6 +163,11 @@ button:focus {
     height: 50vw;
   }
 }
+@media screen and (max-width: 540px) {
+  .footer-right {
+    height: 100vw;
+  }
+}
 .ham {
   display: none;
   min-height: 100vh;
@@ -251,7 +256,7 @@ button:focus {
 .owl-theme .lines .line span {
   width: 2rem;
   height: 2px;
-  margin: 0.438rem 0.875rem 0.438rem 0;
+  margin: 0.438rem 0.675rem 0.438rem 0;
   background: rgba(76, 85, 99, 0.2);
   display: block;
   -webkit-backface-visibility: visible;
@@ -517,6 +522,11 @@ button:focus {
     max-width: 32.375rem;
   }
 }
+@media screen and (max-width: 550px) {
+  .width-550 {
+    max-width: 100%;
+  }
+}
 .width-516 {
   max-width: 32.25rem;
 }
@@ -673,6 +683,9 @@ button:focus {
 @media screen and (max-width: 900px) {
   .display-none-900 {
     display: none;
+  }
+  .block-900 {
+    display: block;
   }
   .flex-900 {
     display: flex;
@@ -889,6 +902,11 @@ button:focus {
 }
 .home-about {
   height: calc(100vh - 2.75rem);
+}
+@media screen and (max-width: 1366px) {
+  .home-about {
+    height: 100vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   .home-about {
@@ -1172,12 +1190,7 @@ button:focus {
 }
 .testimonial {
   width: 50%;
-  height: 33vw;
-}
-@media screen and (max-width: 1280px) {
-  .testimonial {
-    height: 40vw;
-  }
+  height: 40rem;
 }
 @media screen and (max-width: 960px) {
   .testimonial {

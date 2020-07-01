@@ -105,7 +105,7 @@ class __TwigTemplate_ab1c89aae8fc3bf4a78957763676fa746a247c5b5b2bcb9e6b8b231149b
         // line 10
         echo "
 <!-- title -->
-<div class=\"flex flex-column al-it-center margin-top-97 margin-bottom-81\">
+<div class=\"flex flex-column al-it-center margin-top-97 margin-bottom-81 margin-left-40 margin-right-40\">
 \t<div class=\"font-46 color-black line-height-54 margin-bottom-22 text-align-center width-462\">";
         // line 13
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Post"] ?? null), "Title", [], "any", false, false, false, 13), "html", null, true);

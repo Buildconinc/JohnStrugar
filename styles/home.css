@@ -33,6 +33,11 @@
 .home-about {
   height: calc(100vh - 2.75rem);
 }
+@media screen and (max-width: 1366px) {
+  .home-about {
+    height: 100vh;
+  }
+}
 @media screen and (max-width: 1024px) {
   .home-about {
     height: 45.375rem;
