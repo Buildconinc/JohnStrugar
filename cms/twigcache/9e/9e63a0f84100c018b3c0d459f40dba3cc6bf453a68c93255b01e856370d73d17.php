@@ -244,7 +244,7 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
 \t\t\t<div class=\"flex\">
 \t\t\t\t<div class=\"line-black margin-left-64 margin-top-55 display-none-960\"></div>
 \t\t\t\t<div class=\"flex flex-column\">
-\t\t\t\t\t<div class=\"font-16 font-300 color-black line-height-19 margin-left-40 margin-bottom-11\">About</div>
+\t\t\t\t\t<div class=\"font-16 font-300 color-black line-height-19 margin-left-40 margin-bottom-11 margin-top-19\">About</div>
 \t\t\t\t\t<div class=\"font-46 color-black line-height-54 margin-bottom-11 margin-left-40\">";
         // line 78
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "Name", [], "any", false, false, false, 78), "html", null, true);
@@ -259,7 +259,7 @@ class __TwigTemplate_54000e50edb793ba35c07f3d1886cc6cb9f57cfaef44aa5de78e92a9b53
         echo "</div>
 \t\t\t\t</div>
 \t\t\t</div>
-\t\t\t<div class=\"flex al-it-center\">
+\t\t\t<div class=\"flex al-it-center margin-bottom-11\">
 \t\t\t\t<div class=\"line-black margin-left-64\"></div>
 \t\t\t\t<a href=\"about_us\" class=\"font-16 font-gotham color-black line-height-19 margin-left-40 margin-right-19\">Read more</a>
 \t\t\t\t<a href=\"about_us\">
