@@ -684,6 +684,9 @@ button:focus {
   .display-none-900 {
     display: none;
   }
+  .block-900 {
+    display: block;
+  }
   .flex-900 {
     display: flex;
   }
