@@ -556,6 +556,9 @@ button:focus {
     max-width: 100%;
   }
 }
+.width-416 {
+  max-width: 26rem;
+}
 .width-24vw {
   width: 24vw;
   min-width: 17.725rem;
@@ -1221,5 +1224,10 @@ button:focus {
 @media screen and (max-width: 1280px) {
   * {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  * {
+    font-size: 16px;
   }
 }
