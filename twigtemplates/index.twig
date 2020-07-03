@@ -28,10 +28,14 @@
 		</div>
 		<div class="flex al-it-center">
 			<div class="line-white margin-left-64"></div>
-			<a href="treatments" class="font-16 font-gotham color-white line-height-19 margin-left-40 margin-right-19">Read more</a>
-			<a href="treatments">
+			{% for treatment in Treatments %}
+			{% if treatment.show == true %}
+			<a href="treatment/{{treatment.Slug}}" class="font-16 font-gotham color-white line-height-19 margin-left-40 margin-right-19">Read more</a>
+			<a href="treatment/{{treatment.Slug}}">
 				<img src="./assets/images/icons/arrowRight.png">
 			</a>
+			{% endif %}
+			{% endfor %}
 		</div>
 	</div>
 </div>
