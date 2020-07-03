@@ -18,7 +18,7 @@
 			<div class="flex flex-column">
 			{% set Treatments = fetch("Treatments") %}
 			{% for treatment in Treatments %}
-				{% if treatment.show == true and loop.index < 2 %}
+				{% if treatment.show == true %}
 				<div class="font-16 color-white line-height-19 margin-left-40 margin-bottom-16">Treatments</div>
 				<div class="font-32 color-white line-height-38 margin-bottom-38 width-416 margin-left-40">{{treatment.Title}}</div>
 				<div class="font-14 color-white font-300 line-height-22 margin-left-40 margin-bottom-66 width-462">{{treatment.short_text}} </div>
