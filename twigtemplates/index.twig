@@ -19,7 +19,7 @@
 			{% set Treatments = fetch("Treatments") %}
 				<div class="font-16 color-white line-height-19 margin-left-40 margin-bottom-16">Treatments</div>
 				{% for treatment in Treatments %}
-				{% if treatment.show == true %}
+				{% if treatment.show == 'true' %}
 				<div class="font-32 color-white line-height-38 margin-bottom-38 width-416 margin-left-40">{{treatment.Title}}</div>
 				<div class="font-14 color-white font-300 line-height-22 margin-left-40 margin-bottom-66 width-462">{{treatment.short_text}} </div>
 				{% endif %}
@@ -29,7 +29,7 @@
 		<div class="flex al-it-center">
 			<div class="line-white margin-left-64"></div>
 			{% for treatment in Treatments %}
-			{% if treatment.show == true %}
+			{% if treatment.show == 'true' %}
 			<a href="treatment/{{treatment.Slug}}" class="font-16 font-gotham color-white line-height-19 margin-left-40 margin-right-19">Read more</a>
 			<a href="treatment/{{treatment.Slug}}">
 				<img src="./assets/images/icons/arrowRight.png">
