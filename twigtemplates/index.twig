@@ -8,7 +8,8 @@
 {% block og_image %}{{_BASE}}/img/{{Title_and_Description.og_img}}{% endblock %}
 {% block content %}
 
-<!-- intro -->
+<!-- home page -->
+{# <!-- intro -->
 <div class="home-intro flex al-it-center">
 	<a data-fancybox href="https://www.youtube.com/watch?v=DVHr8Dy8cPE&feature=youtu.be">
 		<img class="home-intro-play" src="./assets/images/icons/play.png">	</a>
@@ -98,7 +99,116 @@
 
 <!-- text -->
 <div class="background-color-grey flex al-it-center ju-co-center height-430 padding-40">
-	<div class="font-24 font-300 line-height-36 color-black text-align-center width-854">To practice Neurosurgery at present requires keeping what works and persisting at introducing innovation.</div>
+	<div class="font-24 font-300 line-height-36 color-black text-align-center width-854">Crafting today's treatments and surgery in a larger life plan.</div>
+</div>
+
+{% endblock %} #}
+
+<!-- home page -->
+
+{% set About_us = fetch("About_us") %}
+
+<!-- about -->
+<div class="flex home-about flex-900-column">
+	<div style="background-color: #FBFBFB" class="width-50per">
+		<div class="home-about-background flex flex-column ju-co-center padding-top-40 padding-bottom-40">
+			<div class="flex">
+				<div class="line-black margin-left-64 margin-top-55 display-none-960"></div>
+				<div class="flex flex-column">
+					<div class="font-16 font-300 color-black line-height-19 margin-left-40 margin-bottom-11 margin-top-19">About</div>
+					<div class="font-46 color-black line-height-54 margin-bottom-11 margin-left-40">{{About_us.Name}} </div>
+					<div class="font-36 color-black line-height-42 margin-left-40 margin-bottom-50">{{About_us.Position}}</div>
+					<div class="font-14 color-black font-300 line-height-22 margin-left-40 margin-right-40 border-box margin-bottom-66 width-462">{{About_us.about_us_text|raw}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="background-image: url('img/{{About_us.about_us_photo}}');" class="home-about-image width-50per display-none-900"></div>
+</div>
+
+<!-- philosophy -->
+<div class="flex padding-top-160 padding-bottom-160">
+	<div class="line-black margin-left-64 margin-top-45 display-none-960"></div>
+	<div class="flex flex-column">
+		<div class="font-16 line-height-19 color-black margin-left-40 margin-bottom-6">Philosophy</div>
+		<div class="font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50">{{About_us.philosophy1_title}} </div>
+		<div class="flex flex-900-column">
+			<div class="flex flex-column margin-right-120 margin-900-bottom-40 margin-900-right-40">
+				<div class="font-14 color-black font-300 line-height-22 margin-left-40 width-710">{{About_us.philosophy1_text1|raw}}</div>
+			</div>
+			<div class="flex flex-column margin-900-left-40 margin-900-right-40">
+				<div class="font-14 color-black font-300 line-height-22 width-710">{{About_us.philosophy1_text2|raw}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% set item = fetch("Educations_and_Qualifications") %}
+<!-- education -->
+<div style="background-color: #FBFBFB" class="flex padding-top-160 padding-bottom-160">
+	<div class="line-black margin-left-64 margin-top-16 display-none-960"></div>
+	<div class="flex flex-column">
+		<div class="font-32 line-height-38 color-black margin-left-40 margin-bottom-6">Education and Qualifications</div>
+		<div class="font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50">{{item.Title}}</div>
+		<div class="flex flex-900-column">
+			<div class="flex flex-column margin-right-120 margin-900-bottom-40 margin-900-right-40">
+				<div class="font-14 color-black font-300 line-height-22 margin-left-40 width-710">{{item.Description|raw}}</div>
+			</div>
+			<div class="flex flex-column">
+				<div class="font-14 color-black font-300 line-height-22 width-710 margin-900-left-40 margin-900-right-40">{{item.description2|raw}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% set videos = fetch("Videos") %}
+<!-- video -->
+<div style="background-color: #A59484" class="padding-top-60 padding-bottom-60">
+	<div class="flex">
+	<div class="line-white margin-left-64 margin-top-16 display-none-960"></div>
+		<div class="font-32 line-height-38 color-white width-550 margin-left-40">Video</div>
+	</div>
+	<div style="flex-wrap: wrap;" class="flex al-it-center ju-co-center">
+	{% for video in videos %}
+	<div class="margin-top-45">
+		<a data-fancybox href="{{video.Video}} ">
+			<div style="background-image: url('img/{{video.Image}}');" class="video flex al-it-center">
+				<img class="home-intro-play-2" src="./assets/images/icons/play_gold.png">	
+			</div> 
+		</a>
+		<div style="margin-left: 0.5rem; margin-right: 0.5rem" class="color-white font-16 font-bold margin-top-16">{{video.Title}}</div>
+	</div>
+	{% endfor %}
+	</div>
+</div>
+
+<!-- treatments -->
+{% include 'treatments-slider.twig' %}
+
+<!-- picture -->
+<div style="background-image: url('img/{{About_us.image}}');" class="about-picture-2 flex al-it-center"></div>
+
+<!-- logo -->
+<div class="about-logo flex al-it-center ju-co-center">
+	<a target="_blank" href="https://www.nossmd.com/">
+		<img style="max-width: 18.438rem; max-height: 9rem;" src="./assets/images/NOSS.png">
+	</a>
+</div>
+
+<!-- NOSS -->
+<div class="flex padding-top-160 padding-bottom-160">
+	<div class="line-black margin-left-64 margin-top-19 display-none-960"></div>
+	<div class="flex flex-column">
+		<div class="font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50">{{About_us.philosophy2_title}} </div>
+		<div class="flex flex-900-column">
+			<div class="flex flex-column margin-right-120 margin-900-bottom-40 margin-900-right-40">
+				<div class="font-14 color-black font-300 line-height-22 margin-left-40 width-710">{{About_us.philosophy2_text1|raw}}</div>
+			</div>
+			<div class="flex flex-column margin-900-left-40 margin-900-right-40">
+				<div class="font-14 color-black font-300 line-height-22 width-710">{{About_us.philosophy2_text2|raw}}</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 {% endblock %}
