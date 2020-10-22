@@ -2,12 +2,12 @@
 	<div class="background-image flex padding-top-160 padding-bottom-160">
 		<div class="line-black margin-left-64 margin-top-19 display-none-960"></div>
 		<div class="width-135-per flex flex-column">
-			<div class="font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50">Treatments</div>
+			<h2 class="font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50">Treatments</h2>
 			{% set Treatments = fetch("Treatments") %}
 			<div id="owl2" class="owl-carousel owl-theme flex">
 			{% for item in Treatments %}
 				<a href="treatment/{{item.Slug}}" class="flex flex-column margin-right-120 margin-900-left-40 ">
-					<div class="font-20 color-black font-bold line-height-24 margin-bottom-22">{{item.Title}}</div>
+					<h2 class="font-20 color-black font-bold line-height-24 margin-bottom-22">{{item.Title}}</h2>
 					<div class="flex-wrap-7-line font-14 color-black font-300 line-height-22 margin-bottom-6 width-710 margin-900-bottom-40 border-box">{{item.short_text}}</div>
 				</a>
 			{% endfor %}

@@ -1,0 +1,76 @@
+{% do header('Content-Type: application/xml; charset=utf-8') %}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>{{_BASE}}</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>{{_BASE}}about_us</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>{{_BASE}}treatments</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+{% set Treatments = fetch("Treatments") %}
+	{% for item in Treatments %}
+  <url>
+    <loc>{{_BASE}}treatment/{{item.Slug}}</loc>
+    <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+{% endfor %}
+{# <url>
+  <loc>https://johnstrugar.com/treatment/anterior-cervical-discectomy-and-fusion-acdf</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johnstrugar.com/treatment/anterior-cervical-discectomy-and-arthroplasty-artificial-disc-replacement</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johnstrugar.com/treatment/posterior-cervical-laminectomies-with-or-without-fusion</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johnstrugar.com/treatment/suboccipital-craniotomy-with-or-without-a-fusion</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johnstrugar.com/treatment/thoracic-laminectomy-with-and-without-a-fusion</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johnstrugar.com/treatment/trans-thoracic-vertebrectomy-andor-discectomy-with-and-without-a-fusion</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johnstrugar.com/treatment/lumbar-laminectomy-discectomy-with-and-without-fusion</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johnstrugar.com/treatment/minimally-invasive-lumbar-discectomies-with-and-without-fusion</loc>
+  <lastmod>2020-10-22T17:06:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url> #}
+
+
+</urlset>
