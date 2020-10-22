@@ -11,7 +11,7 @@
 <!-- intro -->
 <div class="treatments-intro flex al-it-center">
 	<div class="flex flex-column display-none-960">
-		<div class="treatments-intro-title color-black margin-left-114 margin-bottom-50">Diseases of the spine</div>
+		<h1 class="treatments-intro-title color-black margin-left-114 margin-bottom-50">Diseases of the spine</h1>
 		<div class="treatments-intro-text font-14 color-black line-height-22 margin-bottom-38 width-386 margin-left-114">Spinal stenosis, disc herniations, deformities, fractures, degenerative disease and tumors that lead to loss of motor and sensory function, pain, and if untreated, paralysis. There are surgical and non-surgical treatments but I will discuss the surgical bellow. These surgical approaches are not exhaustive, but are the more commonly encountered.</div>
 	</div>
 </div>
@@ -21,14 +21,14 @@
 </div>
 
 <!-- treatments -->
-<div class="font-32 line-height-38 color-black background-color-white padding-left-114 padding-top-90 padding-bottom-90">Treatments</div>
+<h2 class="font-32 line-height-38 color-black background-color-white padding-left-114 padding-top-90 padding-bottom-90">Treatments</h2>
 <div class="flex flex-wrap ju-co-center margin-left-40">
 	{% set Treatments = fetch("Treatments") %}
 	{% for item in Treatments %}
 		<!-- 1 -->
 		<div class="treatments-tretment flex flex-column margin-bottom-81 margin-right-40">
 			<div class="treatments-tretment-image margin-bottom-50" style="background-image: url('img/{{item.image}}')"></div>
-			<div class="treatments-tretment-text font-20 line-height-24 font-bold color-black margin-bottom-22">{{item.Title}}</div>
+			<h2 class="treatments-tretment-text font-20 line-height-24 font-bold color-black margin-bottom-22">{{item.Title}}</h2>
 			<div class="flex-wrap-7-line treatments-tretment-text font-14 color-black line-height-22 margin-bottom-38">{{item.short_text}}</div>
 			<div class="flex al-it-center">
 				<div class="line-black"></div>
