@@ -102,7 +102,7 @@ class __TwigTemplate_e562dca46ac957ef0921ab1d1cb42d2492d39dcfa482f6477ed5070aea4
 \t\t<p class=\"font-14 color-white font-gotham margin-right-16 display-none-1024\">Address</p>
 \t\t<p class=\"font-14 color-white font-gotham margin-right-55 display-none-1024\">500 Chase Parkway Waterbury, CT 06708</p>
 \t\t<p class=\"font-14 color-white font-gotham margin-right-16 display-none-1024\">Phone</p>
-\t\t<p class=\"font-14 color-white font-gotham margin-right-55 display-none-1024\">+1 800 463 8764</p>
+\t\t<p class=\"font-14 color-white font-gotham margin-right-55 display-none-1024\">203-755-6677</p>
 \t\t<a href=\"#contact\" class=\"font-14 color-white font-gotham\">Contact</a>
 \t</div>
 \t<div style=\"margin-left: 2rem;\" class=\"display-none flex-960\">
@@ -124,7 +124,7 @@ class __TwigTemplate_e562dca46ac957ef0921ab1d1cb42d2492d39dcfa482f6477ed5070aea4
         echo "\t<a class=\"font-14 line-height-17 font-300 color-white margin-bottom-16\">Address</a>
 \t<a class=\"font-14 line-height-17 color-white margin-bottom-50\">500 Chase Parkway Waterbury, CT 06708</a>
 \t<a class=\"font-14 line-height-17 font-300 color-white margin-bottom-16\">Phone</a>
-\t<a class=\"font-16 line-height-19 color-white margin-bottom-50\">+1 800 463 8764</a>
+\t<a class=\"font-16 line-height-19 color-white margin-bottom-50\">203-755-6677</a>
 \t<a href=\"#contact\" class=\"font-16 line-height-19 color-white margin-bottom-50\">Contact</a>
 </div>
 <div style=\"height: 2.75rem; width: 100%;\"></div>

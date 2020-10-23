@@ -38,7 +38,7 @@ class __TwigTemplate_a72622df9576f7d91a707d99e4ef17235b55535745886991360084a99bd
 \t<div class=\"background-image flex padding-top-160 padding-bottom-160\">
 \t\t<div class=\"line-black margin-left-64 margin-top-19 display-none-960\"></div>
 \t\t<div class=\"width-135-per flex flex-column\">
-\t\t\t<div class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">Treatments</div>
+\t\t\t<h2 class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">Treatments</h2>
 \t\t\t";
         // line 6
         $context["Treatments"] = call_user_func_array($this->env->getFunction('fetch')->getCallable(), ["Treatments"]);
@@ -53,10 +53,10 @@ class __TwigTemplate_a72622df9576f7d91a707d99e4ef17235b55535745886991360084a99bd
             echo "\t\t\t\t<a href=\"treatment/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Slug", [], "any", false, false, false, 9), "html", null, true);
             echo "\" class=\"flex flex-column margin-right-120 margin-900-left-40 \">
-\t\t\t\t\t<div class=\"font-20 color-black font-bold line-height-24 margin-bottom-22\">";
+\t\t\t\t\t<h2 class=\"font-20 color-black font-bold line-height-24 margin-bottom-22\">";
             // line 10
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "Title", [], "any", false, false, false, 10), "html", null, true);
-            echo "</div>
+            echo "</h2>
 \t\t\t\t\t<div class=\"flex-wrap-7-line font-14 color-black font-300 line-height-22 margin-bottom-6 width-710 margin-900-bottom-40 border-box\">";
             // line 11
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "short_text", [], "any", false, false, false, 11), "html", null, true);

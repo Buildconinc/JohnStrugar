@@ -120,14 +120,14 @@ class __TwigTemplate_77227f581bdd2f3dab86934c4925bb3b37f9a61e55431fee8d4e0dfa509
 \t\t\t\t<div class=\"line-black margin-left-64 margin-top-55 display-none-960\"></div>
 \t\t\t\t<div class=\"flex flex-column\">
 \t\t\t\t\t<div class=\"font-16 font-300 color-black line-height-19 margin-left-40 margin-bottom-11 margin-top-19\">About</div>
-\t\t\t\t\t<div class=\"font-46 color-black line-height-54 margin-bottom-11 margin-left-40\">";
+\t\t\t\t\t<h1 class=\"font-46 color-black line-height-54 margin-bottom-11 margin-left-40\">";
         // line 120
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "Name", [], "any", false, false, false, 120), "html", null, true);
-        echo " </div>
-\t\t\t\t\t<div class=\"font-36 color-black line-height-42 margin-left-40 margin-bottom-50\">";
+        echo " </h1>
+\t\t\t\t\t<h1 class=\"font-36 color-black line-height-42 margin-left-40 margin-bottom-50\">";
         // line 121
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "Position", [], "any", false, false, false, 121), "html", null, true);
-        echo "</div>
+        echo "</h1>
 \t\t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 margin-right-40 border-box margin-bottom-66 width-462\">";
         // line 122
         echo twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "about_us_text", [], "any", false, false, false, 122);
@@ -147,10 +147,10 @@ class __TwigTemplate_77227f581bdd2f3dab86934c4925bb3b37f9a61e55431fee8d4e0dfa509
 \t<div class=\"line-black margin-left-64 margin-top-45 display-none-960\"></div>
 \t<div class=\"flex flex-column\">
 \t\t<div class=\"font-16 line-height-19 color-black margin-left-40 margin-bottom-6\">Philosophy</div>
-\t\t<div class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">";
+\t\t<h2 class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">";
         // line 135
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "philosophy1_title", [], "any", false, false, false, 135), "html", null, true);
-        echo " </div>
+        echo " </h2>
 \t\t<div class=\"flex flex-900-column\">
 \t\t\t<div class=\"flex flex-column margin-right-120 margin-900-bottom-40 margin-900-right-40\">
 \t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 width-710\">";
@@ -264,10 +264,10 @@ class __TwigTemplate_77227f581bdd2f3dab86934c4925bb3b37f9a61e55431fee8d4e0dfa509
 <div class=\"flex padding-top-160 padding-bottom-160\">
 \t<div class=\"line-black margin-left-64 margin-top-19 display-none-960\"></div>
 \t<div class=\"flex flex-column\">
-\t\t<div class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">";
+\t\t<h2 class=\"font-32 line-height-38 color-black width-550 margin-left-40 margin-bottom-50\">";
         // line 203
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["About_us"] ?? null), "philosophy2_title", [], "any", false, false, false, 203), "html", null, true);
-        echo " </div>
+        echo " </h2>
 \t\t<div class=\"flex flex-900-column\">
 \t\t\t<div class=\"flex flex-column margin-right-120 margin-900-bottom-40 margin-900-right-40\">
 \t\t\t\t<div class=\"font-14 color-black font-300 line-height-22 margin-left-40 width-710\">";
